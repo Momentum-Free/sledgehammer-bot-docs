@@ -2,34 +2,20 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Introduction
 
-Let's discover **Docusaurus in less than 5 minutes**.
+This is the documentation page for Sledgehammer. This can not always be fully updated, if you notice something is missing, please inform us on the **[support server](https://discord.gg/p2PvAHr4CJ)**.
 
-## Getting Started
+Sledgehammer is a bot assistant to help moderators manage their communities easily without the strugle to do repitive tasks on all the servers, including global banning users and a variety of other features.
 
-Get started by **creating a new site**.
+:::info
+The **global ban** is on the moderator's scope, meaning the ban will apply on all servers that the bot is on and where the moderator either has `ADMINISTRATOR` permissions or has a whitelisted role.
+:::
 
-Or **try Docusaurus immediately** with **[new.docusaurus.io](https://new.docusaurus.io)**.
+## Reporting Issues
 
-## Generate a new site
+If you find an issue or need support in general, feel free to reach out via the **[support server](https://discord.gg/p2PvAHr4CJ)** or open an issue in the **[Gthub repo](https://github.com/Momentum-Free/sledgehammer-bot-docs/issues)**. 
 
-Generate a new Docusaurus site using the **classic template**:
+## Making suggestions
 
-```shell
-npx @docusaurus/init@latest init my-website classic
-```
-
-## Start your site
-
-Run the development server:
-
-```shell
-cd my-website
-
-npx docusaurus start
-```
-
-Your site starts at `http://localhost:3000`.
-
-Open `docs/intro.md` and edit some lines: the site **reloads automatically** and display your changes.
+If you any suggestions for new features or improvements, you can either reach out via the **[support server](https://discord.gg/p2PvAHr4CJ)** or open an issue in the **[Gthub repo](https://github.com/Momentum-Free/sledgehammer-bot-docs/issues)**.
