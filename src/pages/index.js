@@ -30,7 +30,7 @@ export default function Home() {
   return (
     <Layout
       title={`Homepage`}
-      description="Description will go into a meta tag in <head />">
+      description="Keeping Discord servers safer from scammers, spammers and all the malicious actors out there">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
