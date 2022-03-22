@@ -16,7 +16,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="https://discord.com/oauth2/authorize?client_id=863168632941969438&permissions=257967385799&scope=bot%20applications.commands">
+            to="https://invite.sledgehammer.app">
             Invite me 🤖
           </Link>
         </div>
