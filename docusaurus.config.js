@@ -57,19 +57,27 @@ module.exports = {
               label: 'LinkedIn',
               href: 'https://www.linkedin.com/company/Momentum-Free/',
             },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-/*            {
-              label: 'Blog',
-              to: '/blog',
-            },*/
             {
               label: 'GitHub',
               href: 'https://github.com/Momentum-Free/',
             },
+          ],
+        },
+        {
+          title: 'Legal',
+          items: [
+            {
+              label: 'Privacy Policy',
+              to: 'privacy-policy',
+            },
+            {
+              label: 'Terms of Service',
+              to: 'terms-of-service',
+            },
+            {
+              label: 'GDPR',
+              to: 'gdpr',
+            }
           ],
         },
       ],
