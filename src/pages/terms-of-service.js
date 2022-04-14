@@ -8,7 +8,7 @@ export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title={`Terms of Use`}
+      title={`Terms of Service`}
       description="Keeping Discord servers safer from scammers, spammers and all the malicious actors out there">
       <main>
        <Terms />

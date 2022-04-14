@@ -51,7 +51,7 @@ const BlockList = [
     description: (
       <>
 
-        If you are a resident of the European Union, United Kingdom, Lichtenstein, Norway, or Iceland, you may have additional rights under the EU General Data Protection Regulation (the “GDPR”) with respect to your Personal Data. In this event, please refer to our <a href="gdpr">GDPR Privacy Notice</a>, as it applies to you too.
+        If you are a resident of the European Union, United Kingdom, Lichtenstein, Norway, or Iceland, you may have additional rights under the EU General Data Protection Regulation (the “GDPR”) with respect to your Personal Data. In this event, please refer to our <a href="/gdpr">GDPR Privacy Notice</a>, as it applies to you too.
 
       </>
     ),

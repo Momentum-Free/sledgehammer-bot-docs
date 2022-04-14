@@ -6,14 +6,14 @@ const BlockList = [
   {
     description: (
       <>
-        Welcome to Momentum Free. Please read on to learn the rules and restrictions that govern your use of our website(s), products, services, proprietary bots, and other applications (the “Services”). If you have any questions, comments, or concerns regarding these terms or the Services, please contact us at Email: <a href="mailto:tou@momentum-free.com">TOU@momentum-free.com</a>
+        Welcome to Momentum Free. Please read on to learn the rules and restrictions that govern your use of our website(s), products, services, proprietary bots, and other applications (the “Services”). If you have any questions, comments, or concerns regarding these terms or the Services, please contact us at Email: <a href="mailto:tos@momentum-free.com">TOS@momentum-free.com</a>
       </>
     ),
   },
   {
     description: (
       <>
-        These Terms of Use (the “Terms”) are a binding contract between you and <b>MOMENTUM LANCER LDA.</b> (“Momentum Free,” “we” and “us”). Your use of the Services in any way means that you agree to all of these Terms, and these Terms will remain in effect while you use the Services. These Terms include the provisions in this document as well as those in the <a href="privacy-policy">Privacy Policy</a>. <b>Your use of or participation in certain Services may also be subject to additional policies, rules and/or conditions (“Additional Terms”), which are incorporated herein by reference, and you understand and agree that by using or participating in any such Services, you agree to also comply with these Additional Terms. </b>
+        These Terms of Service (the “Terms”) are a binding contract between you and <b>MOMENTUM LANCER LDA.</b> (“Momentum Free,” “we” and “us”). Your use of the Services in any way means that you agree to all of these Terms, and these Terms will remain in effect while you use the Services. These Terms include the provisions in this document as well as those in the <a href="/privacy-policy">Privacy Policy</a>. <b>Your use of or participation in certain Services may also be subject to additional policies, rules and/or conditions (“Additional Terms”), which are incorporated herein by reference, and you understand and agree that by using or participating in any such Services, you agree to also comply with these Additional Terms. </b>
       </>
     ),
   },
@@ -57,9 +57,9 @@ const BlockList = [
     title: 'What about my privacy?',
     description: (
       <>
-        Momentum Free takes the privacy of its users very seriously. For the current Privacy Policy, please click <a href="privacy-policy">here</a>.<br /><br />
+        Momentum Free takes the privacy of its users very seriously. For the current Privacy Policy, please click <a href="/privacy-policy">here</a>.<br /><br />
         <i>Children’s Online Privacy Protection Act</i><br /><br />
-        The Children’s Online Privacy Protection Act (“COPPA”) requires that online service providers obtain parental consent before they knowingly collect personally identifiable information online from children who are under thirteen (13). We do not knowingly collect or solicit personally identifiable information from children under sixteen (16); if you are a child under sixteen (16), please do not attempt to register for or otherwise use the Services or send us any personal information. If we learn we have collected personal information from a child under sixteen (16), we will delete that information as quickly as possible. If you believe that a child under sixteen (16) may have provided us personal information, please contact us at <a href="mailto:tou@momentum-free.com">TOU@momentum-free.com</a>.
+        The Children’s Online Privacy Protection Act (“COPPA”) requires that online service providers obtain parental consent before they knowingly collect personally identifiable information online from children who are under thirteen (13). We do not knowingly collect or solicit personally identifiable information from children under sixteen (16); if you are a child under sixteen (16), please do not attempt to register for or otherwise use the Services or send us any personal information. If we learn we have collected personal information from a child under sixteen (16), we will delete that information as quickly as possible. If you believe that a child under sixteen (16) may have provided us personal information, please contact us at <a href="mailto:tos@momentum-free.com">TOS@momentum-free.com</a>.
       </>
     ),
   },
@@ -170,7 +170,7 @@ const BlockList = [
     description: (
       <>
         <i>Licenses</i><br />
-        In order to display your User Submissions on the Services, and to allow other users to enjoy them (where applicable), you grant us certain rights in those User Submissions (see below for more information). Please note that all of the following licenses are subject to our <a href="privacy-policy">Privacy Policy</a> to the extent they relate to User Submissions that are also your personally-identifiable information.<br /><br />
+        In order to display your User Submissions on the Services, and to allow other users to enjoy them (where applicable), you grant us certain rights in those User Submissions (see below for more information). Please note that all of the following licenses are subject to our <a href="/privacy-policy">Privacy Policy</a> to the extent they relate to User Submissions that are also your personally-identifiable information.<br /><br />
         By submitting User Submissions through the Services, you hereby do and shall grant Momentum Free a worldwide, non-exclusive, perpetual, royalty-free, fully paid, sublicensable and transferable license to use, edit, modify, truncate, aggregate, reproduce, distribute, prepare derivative works of, display, perform, and otherwise fully exploit the User Submissions in connection with this site, the Services and our (and our affiliates’, our and their respective successors’ and assigns’) businesses, including without limitation for promoting and redistributing part or all of this site or the Services (and derivative works thereof), including the User Submissions contained therein, in any media formats and through any media channels (including, without limitation, Third-Party websites, social medias, and feeds), and including after your termination of your account or the Services. You also hereby do and shall grant each user of this site and/or the Services a non-exclusive, perpetual license to access your User Submissions through this site and/or the Services, and to use, edit, modify, reproduce, distribute, prepare derivative works of, display and perform such User Submissions, including after your termination of your account or the Services. For clarity, the foregoing license grants to us and our users do not affect your other ownership or license rights in your User Submissions, including the right to grant additional licenses to your User Submissions, unless otherwise agreed in writing. You represent and warrant that you have all rights to grant such licenses to us without infringement or violation of any Third-Party rights, including without limitation, any privacy rights, publicity rights, copyrights, trademarks, contract rights, or any other intellectual property or proprietary rights.<br /><br />
         Certain features of the Services allow you to share information with others, including through your social networks or other services where you have an account (“Third-Party Accounts”). When Content is authorized for sharing, we will clearly identify the Content you are authorized to redistribute and the ways you may redistribute it, usually by providing a “share” button on or near the Content. If you share information from the Services with others through your Third-Party Accounts, such as your social networks, you authorize Momentum Free to share that information with the applicable Third-Party Account provider. Please review the policies of any Third-Party Account providers you share information with or through for additional information about how they may use your information. If you redistribute Content, you must be able to edit or delete any Content you redistribute, and you must edit or delete it promptly upon our request. <br /><br />
         Finally, you understand and agree that Momentum Free, in performing the required technical steps to provide the Services to our users (including you), may need to make changes to your User Submissions to conform and adapt those User Submissions to the technical requirements of connection networks, devices, services, or media, and the foregoing licenses include the rights to do so.
@@ -210,7 +210,7 @@ const BlockList = [
     title: 'What if I want to stop using the Services? ',
     description: (
       <>
-        You’re free to do that at any time by contacting us at <a href="mailto:tou@momentum-free.com">TOU@momentum-free.com</a>; please refer to our <a href="privacy-policy">Privacy Policy</a>, as well as the licenses above, to understand how we treat information you provide to us after you have stopped using our Services.  If you are an administrator, you may disconnect the Service from your server at any time.
+        You’re free to do that at any time by contacting us at <a href="mailto:tos@momentum-free.com">TOS@momentum-free.com</a>; please refer to our <a href="/privacy-policy">Privacy Policy</a>, as well as the licenses above, to understand how we treat information you provide to us after you have stopped using our Services.  If you are an administrator, you may disconnect the Service from your server at any time.
       </>
     ),
   },
@@ -231,7 +231,7 @@ const BlockList = [
   {
     description: (
       <>
-        If you have deleted your account by mistake, contact us immediately at <a href="mailto:tou@momentum-free.com">TOU@momentum-free.com</a> – we will try to help, but unfortunately, we can’t promise that we can recover or restore anything.
+        If you have deleted your account by mistake, contact us immediately at <a href="mailto:tos@momentum-free.com">TOS@momentum-free.com</a> – we will try to help, but unfortunately, we can’t promise that we can recover or restore anything.
       </>
     ),
   },
@@ -324,7 +324,7 @@ const BlockList = [
   {
     description: (
       <>
-        (f) <i>Opt-out</i>. You have the right to opt out of the provisions of this Section by sending written notice of your decision to opt out to the email <a href="mailto:tou@momentum-free.com">TOU@momentum-free.com</a> within thirty (30) days of first accepting these Terms. You must include (i) your name (ii) the email address and/or telephone number associated with your account, and (iii) a clear statement that you want to opt out of these Terms’ arbitration agreement.
+        (f) <i>Opt-out</i>. You have the right to opt out of the provisions of this Section by sending written notice of your decision to opt out to the email <a href="mailto:tos@momentum-free.com">TOS@momentum-free.com</a> within thirty (30) days of first accepting these Terms. You must include (i) your name (ii) the email address and/or telephone number associated with your account, and (iii) a clear statement that you want to opt out of these Terms’ arbitration agreement.
       </>
     ),
   },
@@ -376,7 +376,7 @@ export default function Terms() {
   return (
     <section className={styles.section}>
       <div className="container">
-        <h1 className={styles.title}>Terms of Use</h1>
+        <h1 className={styles.title}>Terms of Service</h1>
         {BlockList.map((props, idx) => (
           <Block key={idx} {...props} />
         ))}

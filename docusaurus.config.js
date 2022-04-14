@@ -71,8 +71,8 @@ module.exports = {
               to: 'privacy-policy',
             },
             {
-              label: 'Terms of Use',
-              to: 'terms-of-use',
+              label: 'Terms of Service',
+              to: 'terms-of-service',
             },
             {
               label: 'GDPR',
