@@ -26,9 +26,14 @@ function HomepageHeader() {
 }
 
 export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
   return (
     <Layout>
+      <head>
+        <meta property="og:title" content="Sledgehammer Discord Bot" />
+        <meta property="og:description" content="Keeping Discord servers safer from scammers, spammers and all the malicious actors out there." />
+        <meta property="og:site_name" content="Sledgehammer Discord Bot" />
+        <meta property='og:image' content='/img/SledgehammerLogo.png' />
+      </head>
       <HomepageHeader />
       <main>
         <HomepageFeatures />

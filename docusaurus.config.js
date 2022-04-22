@@ -12,10 +12,8 @@ module.exports = {
   favicon: 'img/favicon.ico',
   organizationName: 'Momentum-Free', // Usually your GitHub org/user name.
   projectName: 'Sledgehammer Discord Bot', // Usually your repo name.
-  customFields: {
-    image: 'img/SledgehammerLogo.png',
-  },
   themeConfig: {
+    colorMode: { defaultMode: 'dark' },
     navbar: {
       title: 'Sledgehammer Discord Bot',
       logo: {
