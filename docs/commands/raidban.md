@@ -1,8 +1,7 @@
 ---
 sidebar_position: 6
+title: Raidban
 ---
-
-# Raidban
 
 This command is used to ban users based on the discord's default join message, selecting a start and a finishing message, you'll be able to select those users (Usefull for raids).
 

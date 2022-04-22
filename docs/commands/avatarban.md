@@ -1,8 +1,7 @@
 ---
 sidebar_position: 2
+title: Avatarban
 ---
-
-# Avatarban
 
 This command is used to ban users that match a certain avatar.
 

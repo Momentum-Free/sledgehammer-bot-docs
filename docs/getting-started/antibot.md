@@ -1,8 +1,7 @@
 ---
 sidebar_position: 1
+title: Anti-bot System
 ---
-
-# Anti-bot System
 
 This feature is used to prevent raids, bot accounts (chat bots posing as real users) and malicious users with a unique verification system that will ask users to complete a challenge before having access to the rest of the server.
 

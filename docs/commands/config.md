@@ -1,8 +1,7 @@
 ---
 sidebar_position: 1
+title: Config
 ---
-
-# Config
 
 This command is used to configure multiple aspects and functionalities of the bot.
 

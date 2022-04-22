@@ -14,6 +14,24 @@ module.exports = {
   projectName: 'Sledgehammer Discord Bot', // Usually your repo name.
   themeConfig: {
     colorMode: { defaultMode: 'dark' },
+    metadata: [
+      {
+        name: 'description',
+        content: 'Keeping Discord servers safer from scammers, spammers and all the malicious actors out there.'
+      },
+      {
+        name: 'image',
+        content: 'img/SledgehammerLogo.png'
+      },
+      {
+        name: 'keywords',
+        content: 'sledgehammer, docs, discord bot, momentum free'
+      },
+      {
+        name: 'site_name',
+        content: 'Sledgehammer Discord Bot Documentation'
+      }
+    ],
     navbar: {
       title: 'Sledgehammer Discord Bot',
       logo: {
@@ -102,6 +120,7 @@ module.exports = {
       '@docusaurus/preset-classic',
       {
         docs: {
+          sidebarCollapsed: false,
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
             'https://github.com/Momentum-Free/welcome/edit/master/website/',

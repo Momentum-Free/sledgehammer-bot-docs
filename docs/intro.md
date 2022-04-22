@@ -1,8 +1,7 @@
 ---
 sidebar_position: 1
+title: Introduction
 ---
-
-# Introduction
 
 Welcome to the documentation page for Sledgehammer. These docs may not always be fully up-to-date. If you notice something is missing, please inform us on the [**support server**](https://discord.gg/5bTsAPnfje).
 

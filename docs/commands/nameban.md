@@ -1,8 +1,7 @@
 ---
 sidebar_position: 5
+title: Nameban
 ---
-
-# Nameban
 
 This command is used to ban users based on their username allowing to use Regex to have a more accurate filter for the name.
 

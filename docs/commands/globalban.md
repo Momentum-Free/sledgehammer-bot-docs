@@ -1,8 +1,7 @@
 ---
 sidebar_position: 3
+title: Globalban
 ---
-
-# Globalban
 
 This command is used to globally ban a specific user.
 

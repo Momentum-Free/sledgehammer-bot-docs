@@ -1,8 +1,7 @@
 ---
 sidebar_position: 3
+title: Import / Export Bans
 ---
-
-# Import / Export Bans
 
 If you manage multiple communities and want to import or export bans from one server to the other, this is the feature for you. 
 

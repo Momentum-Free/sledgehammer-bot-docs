@@ -1,8 +1,7 @@
 ---
 sidebar_position: 4
+title: Globalunban
 ---
-
-# Globalunban
 
 This command is used to globally unban a specific user in case a mystake was made.
 

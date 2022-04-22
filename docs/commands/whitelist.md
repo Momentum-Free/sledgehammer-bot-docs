@@ -1,8 +1,7 @@
 ---
 sidebar_position: 7
+title: Whitelisting
 ---
-
-# Whitelisting
 
 In order to use Sledgehammer at it's full potential you have to either have `ADMINISTRATOR` permissions or have a role that has been whitelisted by an administrator.
 
