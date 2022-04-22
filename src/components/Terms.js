@@ -6,7 +6,7 @@ const BlockList = [
   {
     description: (
       <>
-        Welcome to Momentum Free. Please read on to learn the rules and restrictions that govern your use of our website(s), products, services, proprietary bots, and other applications (the “Services”). If you have any questions, comments, or concerns regarding these terms or the Services, please contact us at Email: <a href="mailto:tos@momentum-free.com">TOS@momentum-free.com</a>
+       Welcome to Sledgehamer, a bot developed by <a href="https://momentum-free.com/">Momentum Lancer LDA</a>. Please read on to learn the rules and restrictions that govern your use of our website(s), products, services, proprietary bots, and other applications (the “Services”). If you have any questions, comments, or concerns regarding these terms or the Services, please contact us at Email: <a href="mailto:tos@momentum-free.com">TOS@momentum-free.com</a>
       </>
     ),
   },
@@ -64,7 +64,7 @@ const BlockList = [
     ),
   },
   {
-    title: 'What are the basics of using Momentum Free?',
+    title: 'What are the basics of using the Services?',
     description: (
       <>
         You may need to access certain parts or features of the Services (e.g. our proprietary bots) by using your account credentials and password from other services (“Third-Party Account”), such as those offered by Discord. By using the Services through a Third-Party Account, you permit us to access certain information from such account for use by the Services. You are ultimately in control of how much information is accessible to us and may exercise such control by adjusting your privacy settings on your Third-Party Account.  We store your account credentials but will not store your password. You promise to provide us with accurate, complete, and updated registration information about yourself. You may not use any Third-Party Account that you do not have the right to use, or another person’s account credentials without authorization from that other person. You may not transfer your account to anyone else without our prior written permission.

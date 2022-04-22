@@ -6,7 +6,7 @@ const BlockList = [
   {
     description: (
       <>
-        We at Momentum Lancer LDA know you care about your personal information and we take your privacy seriously. Please read the following to learn more about our Privacy Policy.
+        We at <a href="https://momentum-free.com/">Momentum Lancer LDA</a> (company behind Sledgehammer bot) know you care about your personal information and we take your privacy seriously. Please read the following to learn more about our Privacy Policy.
       </>
     ),
   },

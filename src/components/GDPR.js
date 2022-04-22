@@ -19,7 +19,7 @@ const BlockList = [
     ),
   },
   {
-    title: 'What Personal Data Do We Collect from You?',
+    title: 'What Personal Data do we collect from you?',
     description: (
       <>
         We collect Personal Data about you when you provide such information directly to us, when third parties such as our business partners or service providers provide us with Personal Data about you, or when Personal Data about you is automatically collected in connection with your use of our Services.
@@ -45,14 +45,14 @@ const BlockList = [
                 Email
               </li>
               <li>
-                Dados de navegação de user
+                Navigation Data
               </li>
             </ol>
           </li>
-          <li>Bots de discord:<br />
+          <li>Discord Bots:<br />
             <ol>
               <li>
-                Bots de discord:<br />
+                Sledgehammer:<br />
                 <ol>
                   <li>
                     Discord userID
@@ -77,8 +77,7 @@ const BlockList = [
                 </ol>
               </li>
               <li>
-                Client projects that we host the database can store the following
-                information:<br />
+             Client projects that we host the database can store the following information:<br />
                 <ol>
                   <li>
                     Discord userID
@@ -111,7 +110,7 @@ const BlockList = [
     ),
   },
   {
-    title: 'How Do We Use Your Personal Data?',
+    title: 'How do we use your Personal Data?',
     description: (
       <>
         We process Personal Data to operate, improve, understand and personalize our Services. We will only process your Personal Data if we have a lawful basis for doing so. We do not share or sell your personal information for advertising or marketing purposes.
@@ -119,7 +118,7 @@ const BlockList = [
     ),
   },
   {
-    title: 'How and With Whom Do We Share Your Data?',
+    title: 'How and with whom do we share your Data?',
     description: (
       <>
         We don’t share your personal information with any third-parties, except when we believe it is necessary to comply with applicable law.
@@ -127,7 +126,7 @@ const BlockList = [
     ),
   },
   {
-    title: 'How Long Do We Retain Your Personal Data?',
+    title: 'How long do we retain your Personal Data?',
     description: (
       <>
         We retain Personal Data about you for as long as you have an open account with us.
@@ -135,7 +134,7 @@ const BlockList = [
     ),
   },
   {
-    title: 'What Security Measures Do We Use?',
+    title: 'What Security measures do we use?',
     description: (
       <>
         We use commercially reasonable means to protect your Personal Data.
@@ -151,7 +150,7 @@ const BlockList = [
     ),
   },
   {
-    title: 'What Rights Do You Have Regarding Your Personal Data?',
+    title: 'What rights do you have regarding your Personal Data?',
     description: (
       <>
         You have certain rights with respect to your Personal Data. For more information about these rights, or to submit a request, please email privacy at <a href="mailto:gdpr@momentum-free.com">gdpr@momentum-free.com</a>
@@ -159,7 +158,7 @@ const BlockList = [
     ),
   },
   {
-    title: 'What If You Have Questions Regarding Your Personal Data?',
+    title: 'What if you have questions regarding your Personal Data?',
     description: (
       <>
         If you have any questions about this GDPR Privacy Notice or our data practices, please contact us at the below email: <a href="mailto:gdpr@momentum-free.com">gdpr@momentum-free.com</a>
