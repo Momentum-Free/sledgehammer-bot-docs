@@ -53,6 +53,10 @@ It is also possible (and strongly suggested) to kick (ban is also possible) the 
 
     default: Disabled
 
+:::info
+The auto prune action will only affect users without any role.
+:::
+
 ### Example Usage
 
 ```md

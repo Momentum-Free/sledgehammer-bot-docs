@@ -223,7 +223,10 @@ Used to update specific settings for the anti-bot system
     options: [ Disable, Kick, Ban ]
 
     default: Use previously saved value
-    
+
+:::info
+The auto prune action will only affect users without any role.
+:::
 
 ### Disable
 Used to disable the anti-bot system
