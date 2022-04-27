@@ -1,8 +1,7 @@
 ---
 sidebar_position: 3
+title: Globalban
 ---
-
-# Globalban
 
 This command is used to globally ban a specific user.
 
@@ -24,9 +23,14 @@ This command is used to globally ban a specific user.
     
 **days**
 
-    type: Number
+    type: Option
 
-    description: Number of days to delete messages for (0-7).
+    description: Number of days to delete messages.
+
+    options: [ 0 to 7 ]
+
+    default: 7
+
 
 ## by_id
 
@@ -46,7 +50,11 @@ This command is used to globally ban a specific user.
     
 **days**
 
-    type: Number
+    type: Option
 
-    description: Number of days to delete messages for (0-7).
+    description: Number of days to delete messages.
+
+    options: [ 0 to 7 ]
+
+    default: 7
 

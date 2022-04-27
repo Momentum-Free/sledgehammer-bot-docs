@@ -1,8 +1,7 @@
 ---
 sidebar_position: 6
+title: Raidban
 ---
-
-# Raidban
 
 This command is used to ban users based on the discord's default join message, selecting a start and a finishing message, you'll be able to select those users (Usefull for raids).
 
@@ -30,19 +29,29 @@ This command is used to ban users based on the discord's default join message, s
 
     type: Text Channel
 
-    description: Channel of these messages (only needed if you provided channel ids!).
+    description: Channel of these messages.
+
+:::note
+
+This option is only needed if you provided message ids.
+
+:::
 
 **global**
 
     type: Boolean
 
-    description: Global ban the users? (Default: False).
+    description: Global ban the users?
+
+    default: False
 
 **role-check**
 
     type: Boolean
 
-    description: Whether to ban accounts with roles or not! (default: false).
+    description: Whether to ban accounts with roles or not!
+
+    default: False
 
 **age**
 
@@ -52,6 +61,10 @@ This command is used to ban users based on the discord's default join message, s
 
 **days**
 
-    type: Number
+    type: Option
 
-    description: Number of days to delete messages for (0-7).
+    description: Number of days to delete messages.
+
+    options: [ 0 to 7 ]
+
+    default: 7

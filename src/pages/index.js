@@ -26,11 +26,8 @@ function HomepageHeader() {
 }
 
 export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
   return (
-    <Layout
-      title={`Homepage`}
-      description="Keeping Discord servers safer from scammers, spammers and all the malicious actors out there">
+    <Layout>
       <HomepageHeader />
       <main>
         <HomepageFeatures />

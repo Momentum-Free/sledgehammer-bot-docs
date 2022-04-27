@@ -1,8 +1,7 @@
 ---
 sidebar_position: 5
+title: Nameban
 ---
-
-# Nameban
 
 This command is used to ban users based on their username allowing to use Regex to have a more accurate filter for the name.
 
@@ -24,9 +23,12 @@ This command is used to ban users based on their username allowing to use Regex 
 
     type: Boolean
 
-    description: Do you want to use regex to filter the usernames?.
+    description: Do you want to use regex to filter the usernames?
+
+    default: False
 
 :::info
+
 If you want to learn a bit more about Regex you can check [regexr.com](https://regexr.com) to help you build your expressions
 
 :::
@@ -35,14 +37,18 @@ If you want to learn a bit more about Regex you can check [regexr.com](https://r
 
     type: Boolean
 
-    description: Global ban the users? (Default: False).
+    description: Global ban the users?
+
+    default: False
 
 **role-check**
 
     type: Boolean
 
-    description: Whether to ban accounts with roles or not! (default: false).
+    description: Whether to ban accounts with roles or not!
 
+    default: False
+    
 **age**
 
     type: Number
@@ -51,6 +57,10 @@ If you want to learn a bit more about Regex you can check [regexr.com](https://r
 
 **days**
 
-    type: Number
+    type: Option
 
-    description: Number of days to delete messages for (0-7).
+    description: Number of days to delete messages.
+
+    options: [ 0 to 7 ]
+
+    default: 7

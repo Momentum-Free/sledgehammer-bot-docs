@@ -1,20 +1,20 @@
 ---
 sidebar_position: 1
+title: Config
 ---
-
-# Config
 
 This command is used to configure multiple aspects and functionalities of the bot.
 
 
 ## Autodelete
 
-This feature will delete all messages according to the configuration fater **X** minutes.
+This feature will delete all messages according to the configuration after **X** minutes.
 
 ### Enable
-*Required
 
 Adds a auto delete channel to the list
+
+*Required
 
 **channel***
 
@@ -32,18 +32,23 @@ Adds a auto delete channel to the list
 
     type: Boolean
 
-    description: Whether to delete bot messages or not (default: true).
+    description: Whether to delete bot messages or not.
+
+    default: True
 
 **pinned**
 
     type: Text Channel
 
-    description: Whether to delete pinned messages or not (default: false).
+    description: Whether to delete pinned messages or not.
+
+    default: False
 
 ### Disable
-*Required
 
 Removes a auto delete channel from the list
+
+*Required
 
 **channel***
 
@@ -52,9 +57,42 @@ Removes a auto delete channel from the list
     description: The channel where the messages should be deleted.
 
 
+## Bans
+
+This feature will allows you to import and export bans from the server.
+
+### Export
+
+Export the ban list from the server
+
+*Required
+
+**format***
+
+    type: Option
+
+    description: Type of file to export the bans to.
+
+    options: [ .csv File, .json File ]
+
+### Import
+
+Import a ban list to the server
+
+*Required
+
+**guild**
+
+    type: String
+
+    description: The guild ID to import bans from or leave empty to import from file.
+
+
 ## Logs
 
 This feature will allow you to setup channels to keep track of all the bans occurring on the server.
+
+*Required
 
 **channel***
 
@@ -69,46 +107,19 @@ This feature will allow you to setup channels to keep track of all the bans occu
     description: Whether this channel will receive logging messages or not.
 
 
-## Bans
-
-This feature will allows you to import and export bans from the server.
-
-### Export
-*Required
-
-Export the ban list from the server
-
-**format***
-
-    type: Choice
-
-    description: Type of file to export the bans to.
-
-    choices: [ .csv File, .json File ]
-
-### Import
-*Required
-
-Import a ban list to the server
-
-**guild**
-
-    type: String
-
-    description: The guild ID to import bans from (leave empty to import from file).
-
-
 ## Panel
 
-This feature is used to prevent raids & malicious users allowing you to setup an unique anti-bot verification system that will ask the users to complete a challenge before having access to the rest of the server.
+This feature is used to prevent raids, bot accounts (chat bots posing as real users) and malicious users with a unique verification system that will ask users to complete a challenge before having access to the rest of the server.
 
-The system allows you to enable a "easy verification" feature which consists in two parts:
-1. Users that have the following badges will be automatically verified on join: `DISCORD_EMPLOYEE`, `PARTNERED_SERVER_OWNER`, `BUGHUNTER_LEVEL_1`, `BUGHUNTER_LEVEL_2`, `DISCORD_CERTIFIED_MODERATOR`.
-2. Users that have the following badges will be automatically verified upon request (no challenge needed):  `HYPESQUAD_EVENTS`, `EARLY_SUPPORTER`, `EARLY_VERIFIED_BOT_DEVELOPER`.
+The system allows you to enable an "easy verification" feature which consists in two parts:
+1. Users that have the following badges will be automatically verified when joining: ![][DISCORD_EMPLOYEE] `DISCORD_EMPLOYEE`, ![][BUGHUNTER_LEVEL_1] `BUGHUNTER_LEVEL_1`, ![][BUGHUNTER_LEVEL_2] `BUGHUNTER_LEVEL_2`, ![][PARTNERED_SERVER_OWNER] `PARTNERED_SERVER_OWNER`, ![][DISCORD_CERTIFIED_MODERATOR] `DISCORD_CERTIFIED_MODERATOR`.
+2. Users that have the following badges will be automatically verified upon request (no challenge needed):  ![][HYPESQUAD_EVENTS] `HYPESQUAD_EVENTS`, ![][EARLY_SUPPORTER] `EARLY_SUPPORTER`, ![][EARLY_VERIFIED_BOT_DEVELOPER] `EARLY_VERIFIED_BOT_DEVELOPER`.
+
+It is also possible (and strongly suggested) to kick (ban is also possible) the user if they take longer than **X** minutes to get verified.
 
 
 
-### Setup
+### Create
 
 Used to complete a full setup for the anti-bot system.
 
@@ -147,9 +158,10 @@ Used to complete a full setup for the anti-bot system.
     default: Disabled
 
 ### Send
-*Required
 
 In case you need to send or resend the anti-bot verification message
+
+*Required
 
 **send_channel***
 
@@ -159,13 +171,15 @@ In case you need to send or resend the anti-bot verification message
 
 **language**
 
-    type: Choice
+    type: Option
 
     description: Language to send the message in.
 
+    options: [ English (en), Portuguese (pt) ]
+
     default: English (en)
 
-### Set
+### Update
 Used to update specific settings for the anti-bot system
 
 **role**
@@ -209,7 +223,19 @@ Used to update specific settings for the anti-bot system
     options: [ Disable, Kick, Ban ]
 
     default: Use previously saved value
-    
+
+:::info
+The auto prune action will only affect users without any role.
+:::
 
 ### Disable
 Used to disable the anti-bot system
+
+[DISCORD_EMPLOYEE]: /img/DISCORD_EMPLOYEE.svg
+[PARTNERED_SERVER_OWNER]: /img/PARTNERED_SERVER_OWNER.svg
+[BUGHUNTER_LEVEL_1]: /img/BUGHUNTER_LEVEL_1.svg
+[BUGHUNTER_LEVEL_2]: /img/BUGHUNTER_LEVEL_2.svg
+[DISCORD_CERTIFIED_MODERATOR]: /img/DISCORD_CERTIFIED_MODERATOR.svg
+[HYPESQUAD_EVENTS]: /img/HYPESQUAD_EVENTS.svg
+[EARLY_SUPPORTER]: /img/EARLY_SUPPORTER.svg
+[EARLY_VERIFIED_BOT_DEVELOPER]: /img/EARLY_VERIFIED_BOT_DEVELOPER.svg

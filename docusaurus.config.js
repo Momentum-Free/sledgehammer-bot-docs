@@ -12,12 +12,62 @@ module.exports = {
   favicon: 'img/favicon.ico',
   organizationName: 'Momentum-Free', // Usually your GitHub org/user name.
   projectName: 'welcome', // Usually your repo name.
+  projectName: 'Sledgehammer Discord Bot', // Usually your repo name.
   themeConfig: {
+    colorMode: { defaultMode: 'dark' },
+    metadata: [
+      {
+        name: 'theme-color',
+        content: '#5865F2'
+      },
+      {
+        property: 'og:title',
+        content: 'Sledgehammer Discord Bot'
+      },
+      {
+        property: 'og:description',
+        content: 'Keeping Discord servers safer from scammers, spammers and all the malicious actors out there.'
+      },
+      {
+        property: 'og:image',
+        content: 'https://stg.docs.sledgehammer.app/img/SledgehammerLogo.png'
+      },
+      {
+        name: 'og:keywords',
+        content: 'sledgehammer, docs, discord bot, momentum free'
+      },
+      {
+        property: 'og:site_name',
+        content: 'Sledgehammer Discord Bot Documentation'
+      },
+      {
+        name: 'twitter:card',
+        content: 'summary'
+      },
+      {
+        name: 'twitter:site',
+        content: '@MomentumFree_'
+      },
+      {
+        name: 'twitter:title',
+        content: 'Sledgehammer Discord Bot'
+      },
+      {
+        name: 'twitter:description',
+        content: 'Keeping Discord servers safer from scammers, spammers and all the malicious actors out there.'
+      },
+      {
+        name: 'twitter:image',
+        content: 'https://stg.docs.sledgehammer.app/img/SledgehammerLogo.png'
+      },
+    ],
     navbar: {
       title: 'Sledgehammer Discord Bot',
       logo: {
         alt: 'Momentum Free Logo',
         src: 'img/logo.svg',
+        alt: 'Sledgehammer',
+        src: 'img/SledgehammerLogo.png',
       },
       items: [
         {
@@ -27,6 +77,8 @@ module.exports = {
           label: 'Docs',
         },/*
         {to: '/blog', label: 'Blog', position: 'left'},*/
+        },
+        /* {to: '/blog', label: 'Blog', position: 'left'}, */
         {
           href: 'https://momentum-free.com',
           label: 'Momentum Free',
@@ -41,8 +93,16 @@ module.exports = {
           title: 'Docs',
           items: [
             {
-              label: 'Welcome!',
+              label: 'Introduction',
               to: '/docs/intro',
+            },
+            {
+              label: 'Anti-bot System',
+              to: '/docs/getting-started/antibot',
+            },
+            {
+              label: 'Config Command',
+              to: '/docs/commands/config',
             },
           ],
         },
@@ -93,6 +153,7 @@ module.exports = {
       '@docusaurus/preset-classic',
       {
         docs: {
+          sidebarCollapsed: false,
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
             'https://github.com/Momentum-Free/welcome/edit/master/website/',

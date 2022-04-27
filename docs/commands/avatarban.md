@@ -1,8 +1,7 @@
 ---
 sidebar_position: 2
+title: Avatarban
 ---
-
-# Avatarban
 
 This command is used to ban users that match a certain avatar.
 
@@ -24,23 +23,31 @@ This command is used to ban users that match a certain avatar.
 
     type: Boolean
 
-    description: Global ban the users? (Default: False).
+    description: Global ban the users?
+
+    default: False
 
 **role-check**
 
     type: Boolean
 
-    description: Whether to ban accounts with roles or not! (default: false).
+    description: Whether to ban accounts with roles or not.
+
+    default: False
 
 **age**
 
     type: Number
 
-    description: Accounts older then this value (in days) won't get banned!.
+    description: Accounts older then this value (in days) won't get banned.
 
 **days**
 
-    type: Number
+    type: Option
 
-    description: Number of days to delete messages for (0-7).
+    description: Number of days to delete messages.
+
+    options: [ 0 to 7 ]
+
+    default: 7
 
