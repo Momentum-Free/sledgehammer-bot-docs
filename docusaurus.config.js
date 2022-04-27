@@ -16,15 +16,15 @@ module.exports = {
     colorMode: { defaultMode: 'dark' },
     metadata: [
       {
-        name: 'og:title',
+        property: 'og:title',
         content: 'Sledgehammer Discord Bot'
       },
       {
-        name: 'og:description',
+        property: 'og:description',
         content: 'Keeping Discord servers safer from scammers, spammers and all the malicious actors out there.'
       },
       {
-        name: 'og:image',
+        property: 'og:image',
         content: 'img/SledgehammerLogo.png'
       },
       {
@@ -32,7 +32,7 @@ module.exports = {
         content: 'sledgehammer, docs, discord bot, momentum free'
       },
       {
-        name: 'og:site_name',
+        property: 'og:site_name',
         content: 'Sledgehammer Discord Bot Documentation'
       }
     ],
