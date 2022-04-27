@@ -30,7 +30,7 @@ module.exports = {
       },
       {
         property: 'og:image',
-        content: 'https://stg.docs.sledgehammer.app/img/SledgehammerLogo.png'
+        content: 'https://docs.sledgehammer.app/img/SledgehammerLogo.png'
       },
       {
         name: 'og:keywords',
@@ -58,7 +58,7 @@ module.exports = {
       },
       {
         name: 'twitter:image',
-        content: 'https://stg.docs.sledgehammer.app/img/SledgehammerLogo.png'
+        content: 'https://docs.sledgehammer.app/img/SledgehammerLogo.png'
       },
     ],
     navbar: {
@@ -75,10 +75,8 @@ module.exports = {
           docId: 'intro',
           position: 'left',
           label: 'Docs',
-        },/*
-        {to: '/blog', label: 'Blog', position: 'left'},*/
         },
-        /* {to: '/blog', label: 'Blog', position: 'left'}, */
+        // {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://momentum-free.com',
           label: 'Momentum Free',
