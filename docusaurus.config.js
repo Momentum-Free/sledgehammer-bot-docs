@@ -16,6 +16,10 @@ module.exports = {
     colorMode: { defaultMode: 'dark' },
     metadata: [
       {
+        name: 'theme-color',
+        content: '#5865F2'
+      },
+      {
         property: 'og:title',
         content: 'Sledgehammer Discord Bot'
       },
