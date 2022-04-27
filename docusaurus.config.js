@@ -34,7 +34,27 @@ module.exports = {
       {
         property: 'og:site_name',
         content: 'Sledgehammer Discord Bot Documentation'
-      }
+      },
+      {
+        name: 'twitter:card',
+        content: 'summary'
+      },
+      {
+        name: 'twitter:site',
+        content: '@MomentumFree_'
+      },
+      {
+        name: 'twitter:title',
+        content: 'Sledgehammer Discord Bot'
+      },
+      {
+        name: 'twitter:description',
+        content: 'Keeping Discord servers safer from scammers, spammers and all the malicious actors out there.'
+      },
+      {
+        name: 'twitter:image',
+        content: 'https://stg.docs.sledgehammer.app/img/SledgehammerLogo.png'
+      },
     ],
     navbar: {
       title: 'Sledgehammer Discord Bot',
