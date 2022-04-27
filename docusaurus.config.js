@@ -25,10 +25,10 @@ module.exports = {
       },
       {
         property: 'og:image',
-        content: 'img/SledgehammerLogo.png'
+        content: 'https://stg.docs.sledgehammer.app/img/SledgehammerLogo.png'
       },
       {
-        name: 'keywords',
+        name: 'og:keywords',
         content: 'sledgehammer, docs, discord bot, momentum free'
       },
       {
