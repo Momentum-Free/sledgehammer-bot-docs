@@ -19,7 +19,7 @@ This feature is a unique verification system that grants the access to the serve
 
 This command is used to ban users that match a certain avatar.
 
-### [🌐 Globalban](commands/globalban.md)
+### [🌐 Globalban](commands/globalban-unban.md)
 
 This command is used to globally ban a specific user.
 
