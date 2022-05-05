@@ -1,19 +1,19 @@
 ---
-sidebar_position: 5
-title: Nameban
+sidebar_position: 4
+title: ✏️ Nameban
 ---
 
 This command is used to ban users based on their username allowing to use Regex to have a more accurate filter for the name.
 
-*Required
+\*Required
 
-**name***
+**name\***
 
     type: String
 
     description: User's name to ban.
 
-**reason***
+**reason\***
 
     type: String
 
@@ -48,7 +48,7 @@ If you want to learn a bit more about Regex you can check [regexr.com](https://r
     description: Whether to ban accounts with roles or not!
 
     default: False
-    
+
 **age**
 
     type: Number
@@ -64,3 +64,4 @@ If you want to learn a bit more about Regex you can check [regexr.com](https://r
     options: [ 0 to 7 ]
 
     default: 7
+    

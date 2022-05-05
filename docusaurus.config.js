@@ -11,7 +11,7 @@ module.exports = {
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'Momentum-Free', // Usually your GitHub org/user name.
-  projectName: 'welcome', // Usually your repo name.
+  projectName: 'sledgehammer-bot-docs', // Usually your repo name.
   projectName: 'Sledgehammer Discord Bot', // Usually your repo name.
   themeConfig: {
     colorMode: { defaultMode: 'dark' },
@@ -145,11 +145,20 @@ module.exports = {
       theme: lightCodeTheme,
       darkTheme: darkCodeTheme,
     },
+    imageZoom: {
+      options: {
+        margin: 200,
+        background: 'rgba(0,0,0,0.8)',
+      },
+    },
   },
   presets: [
     [
       '@docusaurus/preset-classic',
       {
+        theme: {
+          customCss: [require.resolve('./src/css/custom.css')],
+        },
         docs: {
           sidebarCollapsed: false,
           sidebarPath: require.resolve('./sidebars.js'),
@@ -158,5 +167,8 @@ module.exports = {
         },
       },
     ],
+  ],
+  plugins: [
+    'plugin-image-zoom'
   ],
 };

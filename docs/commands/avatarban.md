@@ -1,19 +1,19 @@
 ---
-sidebar_position: 2
-title: Avatarban
+sidebar_position: 3
+title: 🎭 Avatarban
 ---
 
 This command is used to ban users that match a certain avatar.
 
-*Required
+\*Required
 
-**user***
+**user\***
 
     type: User
 
     description: User to get the avatar from.
 
-**reason***
+**reason\***
 
     type: String
 
@@ -50,4 +50,3 @@ This command is used to ban users that match a certain avatar.
     options: [ 0 to 7 ]
 
     default: 7
-

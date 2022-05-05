@@ -5,7 +5,7 @@ title: Whitelisting Roles
 
 In order to use Sledgehammer at it's full potential you have to either have `ADMINISTRATOR` permissions or have a role that has been whitelisted by an administrator.
 
-:::info 
+:::info
 At the moment it is only possible to whitelist **roles**, not users!
 :::
 
@@ -16,10 +16,10 @@ At the moment it is only possible to whitelist **roles**, not users!
 ```
 
 ### Parameters
-*Required
 
+\*Required
 
-**role***
+**role\***
 
     type: Role
 
@@ -38,15 +38,14 @@ At the moment it is only possible to whitelist **roles**, not users!
 ```
 
 ### Parameters
-*Required
 
+\*Required
 
-**role***
+**role\***
 
     type: Role
 
     description: Role to remove from the whitelist.
-
 
 ### Example Usage
 

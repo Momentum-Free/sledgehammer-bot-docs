@@ -1,9 +1,9 @@
 ---
 sidebar_position: 3
-title: Import / Export Bans
+title: ⚙️ Import / Export Bans
 ---
 
-If you manage multiple communities and want to import or export bans from one server to the other, this is the feature for you. 
+If you manage multiple communities and want to import or export bans from one server to the other, this is the feature for you.
 
 ## Import Command
 
@@ -12,8 +12,8 @@ If you manage multiple communities and want to import or export bans from one se
 ```
 
 ### Parameters
-*Required
 
+\*Required
 
 **guild**
 
@@ -42,10 +42,10 @@ The guild parameter is optional, if you do not specify it, you will be prompted 
 ```
 
 ### Parameters
-*Required
 
+\*Required
 
-**format***
+**format\***
 
     type: Option
 

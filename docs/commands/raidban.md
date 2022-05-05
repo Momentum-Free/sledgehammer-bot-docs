@@ -1,31 +1,31 @@
 ---
-sidebar_position: 6
-title: Raidban
+sidebar_position: 5
+title: 🚨 Raidban
 ---
 
 This command is used to ban users based on the discord's default join message, selecting a start and a finishing message, you'll be able to select those users (Usefull for raids).
 
-*Required
+\*Required
 
-**first_message***
+**first_message\***
 
     type: String
 
     description: First message (id or link) to ban users.
 
-**last_message***
+**last_message\***
 
     type: String
 
     description: Last message (id or link) to ban users.
 
-**reason***
+**reason\***
 
     type: String
 
     description: Reason to ban the users for.
 
-**channel***
+**channel\***
 
     type: Text Channel
 
@@ -68,3 +68,4 @@ This option is only needed if you provided message ids.
     options: [ 0 to 7 ]
 
     default: 7
+    
