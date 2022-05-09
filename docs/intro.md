@@ -5,13 +5,13 @@ title: 🔨 Introduction
 
 Welcome to the documentation page for Sledgehammer. These docs may not always be fully up-to-date. If you notice something is missing, please inform us on the [**support server**](https://discord.gg/5bTsAPnfje).
 
-Sledgehammer is a security bot assistant **free to use** that helps moderators manage their communities easily without the struggle to do repetitive tasks across all the managed servers, including global banning users and a variety of other features.
+Sledgehammer is a security bot assistant **free to use** that helps moderators manage their communities easily without having to do repetitive tasks across all the managed servers, including global banning users and a variety of other features.
 
 ## 🚩 Features
 
 ### [🤖 Anti-bot System](getting-started/antibot.md)
 
-This feature is a unique verification system that grants the access to the server to new users if they prove they are human. It's used to prevent raids, bot accounts (chat bots posing as real users) and malicious users.
+This feature gives all new members a verification that they must complete in order to prove that they are human and gain access to the server. It's used to prevent raids, bot accounts (chat bots posing as real users) and malicious users.
 
 ![][antibot_system]
 

@@ -147,7 +147,6 @@ module.exports = {
     },
     imageZoom: {
       options: {
-        margin: 200,
         background: 'rgba(0,0,0,0.8)',
       },
     },

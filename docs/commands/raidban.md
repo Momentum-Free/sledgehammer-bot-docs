@@ -3,7 +3,20 @@ sidebar_position: 5
 title: 🚨 Raidban
 ---
 
-This command is used to ban users based on the discord's default join message, selecting a start and a finishing message, you'll be able to select those users (Usefull for raids).
+<!-- Imports -->
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Admonition from '@theme/Admonition';
+import CodeBlock from '@theme/CodeBlock';
+
+<!-- Documentation -->
+This command is used to ban users based on the discord's default join message, selecting a start and a finishing message, you'll be able to select those users (useful for raids).
+
+```
+/raidban
+```
+
+**Parameters**
 
 \*Required
 
@@ -19,6 +32,12 @@ This command is used to ban users based on the discord's default join message, s
 
     description: Last message (id or link) to ban users.
 
+:::info
+
+If you do not know how to grab the message id/link, check [this article](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID) by Discord.
+
+:::
+
 **reason\***
 
     type: String
@@ -33,7 +52,7 @@ This command is used to ban users based on the discord's default join message, s
 
 :::note
 
-This option is only needed if you provided message ids.
+This option is only needed if you provided message id.
 
 :::
 
@@ -68,4 +87,25 @@ This option is only needed if you provided message ids.
     options: [ 0 to 7 ]
 
     default: 7
-    
+
+**Example Usage**
+
+<Tabs>
+    <TabItem value="withids" label="Usage with Message ID" default>
+        <CodeBlock>
+            /raidban first_message:966723570824773703 last_message:968461919289765908 reason:Raid channel:#welcome
+        </CodeBlock>
+    </TabItem>
+    <TabItem value="withlinks" label="Usage with Message Link">
+        <CodeBlock>
+            /raidban first_message:https://discord.com/channels/966723419775311882/966723419775311885/966723570824773703 last_message:https://discord.com/channels/966723419775311882/966723419775311885/967010103322636298 reason:Raid
+        </CodeBlock>
+    </TabItem>
+</Tabs>
+
+
+:::info
+
+If you do not know how to grab the message id/link, check [this article](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID) by Discord.
+
+:::

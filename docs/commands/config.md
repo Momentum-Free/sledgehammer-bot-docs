@@ -58,7 +58,7 @@ Adds a auto delete channel to the list
 
 **pinned**
 
-    type: Text Channel
+    type: Boolean
 
     description: Whether to delete pinned messages or not.
 
@@ -419,6 +419,14 @@ Used to disable the anti-bot system
 
 ```
 /config panel disable
+```
+
+## Report
+
+This feature will return you a report about the bot's configurations on the server.
+
+```
+/config report
 ```
 
 [discord_employee]: /img/DISCORD_EMPLOYEE.svg

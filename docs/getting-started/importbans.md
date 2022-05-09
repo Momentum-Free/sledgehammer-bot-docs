@@ -13,8 +13,6 @@ If you manage multiple communities and want to import or export bans from one se
 
 ### Parameters
 
-\*Required
-
 **guild**
 
     type: Guild Id

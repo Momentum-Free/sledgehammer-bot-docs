@@ -3,7 +3,14 @@ sidebar_position: 3
 title: 🎭 Avatarban
 ---
 
+<!-- Documentation -->
 This command is used to ban users that match a certain avatar.
+
+```
+/avatarban
+```
+
+**Parameters**
 
 \*Required
 
@@ -50,3 +57,9 @@ This command is used to ban users that match a certain avatar.
     options: [ 0 to 7 ]
 
     default: 7
+
+**Example Usage**
+
+```
+/avatarban user:@user#0000 reason:Scam
+```

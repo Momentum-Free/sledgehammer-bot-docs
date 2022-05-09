@@ -28,7 +28,7 @@ Used to complete a full setup for the anti-bot system.
 /config panel create
 ```
 
-### Parameters
+**Parameters**
 
 **role**
 
@@ -68,16 +68,16 @@ Used to complete a full setup for the anti-bot system.
 The auto prune action will only affect users without any role.
 :::
 
-### Example Usage
+**Example Usage**
 
 <Tabs>
-  <TabItem value="usage1" label="Usage with Parameters" default>
-    <CodeBlock language="yaml">
+  <TabItem value="withparameters" label="Usage with Parameters" default>
+    <CodeBlock>
       /config panel create role:@Verified Human easy_verification:True auto_prune_time:5 auto_prune_action:Kick
     </CodeBlock>
   </TabItem>
-  <TabItem value="usage2" label="Usage without Parameters">
-    <CodeBlock language="markdown">
+  <TabItem value="withoutparameters" label="Usage without Parameters">
+    <CodeBlock>
       /config panel create
     </CodeBlock>
     <Admonition type="note">

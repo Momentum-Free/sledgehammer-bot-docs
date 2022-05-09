@@ -3,7 +3,20 @@ sidebar_position: 4
 title: ✏️ Nameban
 ---
 
+<!-- Imports -->
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Admonition from '@theme/Admonition';
+import CodeBlock from '@theme/CodeBlock';
+
+<!-- Documentation -->
 This command is used to ban users based on their username allowing to use Regex to have a more accurate filter for the name.
+
+```
+/nameban
+```
+
+**Parameters**
 
 \*Required
 
@@ -23,13 +36,13 @@ This command is used to ban users based on their username allowing to use Regex 
 
     type: Boolean
 
-    description: Do you want to use regex to filter the usernames?
+    description: Use the name parameter as a Regex expression.
 
     default: False
 
 :::info
 
-If you want to learn a bit more about Regex you can check [regexr.com](https://regexr.com) to help you build your expressions
+If you want to learn a bit more about Regex you can check [regexr.com](https://regexr.com) to help you build your expressions.
 
 :::
 
@@ -64,4 +77,19 @@ If you want to learn a bit more about Regex you can check [regexr.com](https://r
     options: [ 0 to 7 ]
 
     default: 7
+
+**Example Usage**
+
+<Tabs>
+    <TabItem value="withname" label="Usage with Name" default>
+        <CodeBlock>
+            /nameban name:Support reason:Scam
+        </CodeBlock>
+    </TabItem>
+    <TabItem value="withregex" label="Usage with Regex">
+        <CodeBlock>
+            /nameban name:(?i)(support|helpdesk) reason:Raid regex:True
+        </CodeBlock>
+    </TabItem>
+</Tabs>
     

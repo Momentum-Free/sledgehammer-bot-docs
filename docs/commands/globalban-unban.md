@@ -12,7 +12,7 @@ import CodeBlock from '@theme/CodeBlock';
 <!-- Documentation -->
 
 :::info
-Both **global** commands are on the moderator's scope, meaning the ban/unban will be applied on all servers that the bot is in and where the moderator either has `ADMINISTRATOR` permissions or has a whitelisted role.
+Both **global** commands are on the moderator's scope, meaning the ban/unban will be applied on all servers that the bot is in and where the moderator either has `ADMINISTRATOR` permission or has a whitelisted role.
 :::
 
 ## Globalban
@@ -27,9 +27,9 @@ This command is used to globally ban a specific user.
     /globalban by_member
 </CodeBlock>
 
-<h4>Parameters</h4>
+**Parameters**
 
-*Required
+\*Required
 
 **user\***
 
@@ -53,7 +53,7 @@ This command is used to globally ban a specific user.
 
     default: 7
 
-<h4>Usage</h4>
+**Example Usage**
 
 <CodeBlock>
     /globalban by_member user:@user#0000 reason:Spam
@@ -66,9 +66,9 @@ This command is used to globally ban a specific user.
     /globalban by_id
 </CodeBlock>
 
-<h4>Parameters</h4>
+**Parameters**
 
-*Required
+\*Required
 
 **user\***
 
@@ -92,7 +92,7 @@ This command is used to globally ban a specific user.
 
     default: 7
 
-<h4>Usage</h4>
+**Example Usage**
 
 <CodeBlock>
     /globalban by_id user:312709238164291585 reason:Spam
@@ -118,7 +118,7 @@ This command is used to globally unban a specific user in case a mystake was mad
 
     description: User ID to globally unban.
 
-**Usage**
+**Example Usage**
 
 ```
 /globalunban user_id:312709238164291585
