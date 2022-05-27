@@ -102,7 +102,7 @@ This command is used to globally ban a specific user.
 
 ## Globalunban
 
-This command is used to globally unban a specific user in case a mystake was made.
+This command is used to globally unban a specific user in case a mistake was made.
 
 ```
 /globalunban

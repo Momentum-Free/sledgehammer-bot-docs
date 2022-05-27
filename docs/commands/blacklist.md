@@ -298,7 +298,7 @@ These options only show up if you have at least one user id blacklist restrictio
 
 ## Subscribe
 
-Subscribe to another sever's blacklist.
+Subscribe to another server's blacklist.
 
 ```
 /blacklist subscribe

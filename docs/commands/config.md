@@ -96,7 +96,7 @@ Removes a auto delete channel from the list
 
 ## Bans
 
-This feature will allows you to import and export bans from the server.
+This feature will allow you to import and export bans from the server.
 
 ```
 /config bans
