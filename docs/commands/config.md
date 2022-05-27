@@ -311,9 +311,15 @@ In case you need to send or resend the anti-bot verification message
 
     description: Language to send the message in.
 
-    options: [ English (🇬🇧), Portuguese (🇵🇹), Ukrainian (🇺🇦), Russian (🇷🇺) ]
+    options: [ English (🇬🇧), Portuguese (🇵🇹), Ukrainian (🇺🇦), Russian (🇷🇺), French (🇫🇷) ]
 
     default: English (🇬🇧)
+
+:::info
+
+If you speak a language that is not currently supported by Sledgehammer, you can create an pull request with your language on the **[Github repo](https://github.com/Momentum-Free/sledgehammer-bot-translations)**.
+
+:::
 
 **Example Usage**
 

@@ -39,12 +39,16 @@ This command is used to ban users based on their username allowing to use Regex 
 
 This command is used to ban users based on the discord's default join message, selecting a start and a finishing message, you'll be able to select those users (Usefull for raids).
 
-## 🪲 Reporting Issues
+## 🗺️ Translate for Us
 
-If you find an issue or need support in general, feel free to reach out via the **[support server](https://discord.gg/5bTsAPnfje)** or open an issue on our **[Github repo](https://github.com/Momentum-Free/sledgehammer-bot-docs/issues)**.
+If you want to have a specific supported language in Sledgehammer, you can create an pull request with your language on the **[Github repo](https://github.com/Momentum-Free/sledgehammer-bot-translations)**. As soon as possible, we'll add your language to the bot. We appreciate any kind of  help that you can provide to us.
 
 ## 💡 Making Suggestions
 
 If you have any suggestions for new features or improvements, you can either reach out via the **[support server](https://discord.gg/5bTsAPnfje)** or open an issue on the **[Github repo](https://github.com/Momentum-Free/sledgehammer-bot-docs/issues)**.
+
+## 🪲 Reporting Issues
+
+If you find an issue or need support in general, feel free to reach out via the **[support server](https://discord.gg/5bTsAPnfje)** or open an issue on our **[Github repo](https://github.com/Momentum-Free/sledgehammer-bot-docs/issues)**.
 
 [antibot_system]: /img/ANTIBOT_SYSTEM.png
