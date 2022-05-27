@@ -311,9 +311,9 @@ In case you need to send or resend the anti-bot verification message
 
     description: Language to send the message in.
 
-    options: [ English (en), Portuguese (pt) ]
+    options: [ English (🇬🇧), Portuguese (🇵🇹), Ukrainian (🇺🇦), Russian (🇷🇺) ]
 
-    default: English (en)
+    default: English (🇬🇧)
 
 **Example Usage**
 

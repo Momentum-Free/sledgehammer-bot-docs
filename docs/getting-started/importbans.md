@@ -49,7 +49,7 @@ The guild parameter is optional, if you do not specify it, you will be prompted 
 
     description: File format to export the bans to.
 
-    choices: [ .csv File, .json File ]
+    options: [ .csv File, .json File ]
 
 ### Example Usage
 

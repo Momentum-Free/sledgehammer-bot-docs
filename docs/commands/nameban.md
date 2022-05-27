@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 5
 title: ✏️ Nameban
 ---
 
@@ -88,7 +88,7 @@ If you want to learn a bit more about Regex you can check [regexr.com](https://r
     </TabItem>
     <TabItem value="withregex" label="Usage with Regex">
         <CodeBlock>
-            /nameban name:(?i)(support|helpdesk) reason:Raid regex:True
+            /nameban name:.*(support|help+)+.* reason:Raid regex:True
         </CodeBlock>
     </TabItem>
 </Tabs>

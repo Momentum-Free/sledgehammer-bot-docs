@@ -19,6 +19,10 @@ This feature gives all new members a verification that they must complete in ord
 
 This command is used to ban users that match a certain avatar.
 
+### [⛔ Blacklist](commands/blacklist.md)
+
+This command is used to take an action on certain types of users based on a list of restrictions.
+
 ### [🌐 Globalban](commands/globalban-unban.md)
 
 This command is used to globally ban a specific user.
