@@ -104,7 +104,7 @@ This feature will allow you to import and export bans from the server.
 
 ### Export
 
-Export the ban list from the server
+Export the ban list from the server.
 
 ```
 /config bans export
@@ -118,7 +118,7 @@ Export the ban list from the server
 
     type: Option
 
-    description: Type of file to export the bans to.
+    description: Type of file to export the bans to
 
     options: [ .csv File, .json File ]
 
@@ -130,7 +130,7 @@ Export the ban list from the server
 
 ### Import
 
-Import a ban list to the server
+Import a ban list to the server.
 
 ```
 /config bans import
@@ -138,32 +138,35 @@ Import a ban list to the server
 
 **Parameters**
 
-\*Required
-
 **guild**
 
     type: String
 
-    description: The guild ID to import bans from or leave empty to import from file.
+    description: The guild ID to import bans from or leave empty to import from file
 
 **Example Usage**
 
 <Tabs>
-  <TabItem value="usage1" label="Usage with Guild ID" default>
-    <CodeBlock language="yaml">
-      /config bans import guild:966723419775311882
-    </CodeBlock>
-  </TabItem>
-  <TabItem value="usage2" label="Usage with File">
-    <CodeBlock language="markdown">
-      /config bans import 
-    </CodeBlock>
-    <Admonition type="info">
-      <p>
-        To import the bans, you have to upload a .csv or .json file previous exported via the `/config bans export` command.
-      </p>
-    </Admonition>
-  </TabItem>
+<TabItem value="guildid" label="Usage with Guild ID" default>
+
+```
+/config bans import guild:966723419775311882
+```
+
+</TabItem>
+<TabItem value="file" label="Usage with File">
+
+```
+/config bans import
+```
+
+:::info
+
+To import the bans, you have to upload a `.csv` or `.json` file previous exported via the `/config bans export` command.
+
+:::
+
+</TabItem>
 </Tabs>
 
 ## Logs

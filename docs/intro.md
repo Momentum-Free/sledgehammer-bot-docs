@@ -41,7 +41,7 @@ This command is used to ban users based on the discord's default join message, s
 
 ## 🗺️ Translate for Us
 
-If you want to have a specific supported language in Sledgehammer, you can create an pull request with your language on the **[Github repo](https://github.com/Momentum-Free/sledgehammer-bot-translations)**. As soon as possible, we'll add your language to the bot. We appreciate any kind of  help that you can provide to us.
+If you want to have a specific supported language in Sledgehammer, you can create an pull request with your language on the **[Github repo](https://github.com/Momentum-Free/sledgehammer-bot-translations)**. We'll add your language to the bot as soon as possible. We appreciate any kind of  help that you can provide to us.
 
 ## 💡 Making Suggestions
 
