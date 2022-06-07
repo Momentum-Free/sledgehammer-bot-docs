@@ -1,29 +1,38 @@
 ---
 sidebar_position: 1
-title: Anti-bot System
+title: 🤖 Anti-bot System
 ---
 
+<!-- Imports -->
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<!-- Documentation -->
 This feature is used to prevent raids, bot accounts (chat bots posing as real users) and malicious users with a unique verification system that will ask users to complete a challenge before having access to the rest of the server.
 
-The system allows you to enable an "easy verification" feature which consists in two parts:
-1. Users that have the following badges will be automatically verified when joining: ![][DISCORD_EMPLOYEE] `DISCORD_EMPLOYEE`, ![][BUGHUNTER_LEVEL_1] `BUGHUNTER_LEVEL_1`, ![][BUGHUNTER_LEVEL_2] `BUGHUNTER_LEVEL_2`, ![][PARTNERED_SERVER_OWNER] `PARTNERED_SERVER_OWNER`, ![][DISCORD_CERTIFIED_MODERATOR] `DISCORD_CERTIFIED_MODERATOR`.
-2. Users that have the following badges will be automatically verified upon request (no challenge needed):  ![][HYPESQUAD_EVENTS] `HYPESQUAD_EVENTS`, ![][EARLY_SUPPORTER] `EARLY_SUPPORTER`, ![][EARLY_VERIFIED_BOT_DEVELOPER] `EARLY_VERIFIED_BOT_DEVELOPER`.
+The system allows you to enable an `easy_verification` feature which consists in two parts:
 
-It is also possible (and strongly suggested) to kick (ban is also possible) the user if they take longer than **X** minutes to get verified.
+| Users that have the following badges will be automatically verified when joining                                                                                                                                                                                           	| Users that have the following badges will be automatically verified upon request (no challenge needed)                                                      	|
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|-------------------------------------------------------------------------------------------------------------------------------------------------------------	|
+| ![][discord_employee] `DISCORD_EMPLOYEE` <br/> ![][bughunter_level_1] `BUGHUNTER_LEVEL_1` <br/> ![][bughunter_level_2] `BUGHUNTER_LEVEL_2` <br/> ![][partnered_server_owner] `PARTNERED_SERVER_OWNER` <br/> ![][discord_certified_moderator] `DISCORD_CERTIFIED_MODERATOR` 	| ![][hypesquad_events] `HYPESQUAD_EVENTS` <br/> ![][early_supporter] `EARLY_SUPPORTER` <br/> ![][early_verified_bot_developer] `EARLY_VERIFIED_BOT_DEVELOPER` 	|
+
+It is also possible (and strongly suggested) to kick (ban is also possible) the user if they take longer than `X` minutes to get verified.
 
 ## Create Command
+
+Used to complete a full setup for the anti-bot system.
 
 ```
 /config panel create
 ```
 
-### Parameters
+**Parameters**
 
 **role**
 
     type: Role
 
-    description: Role to apply to the member when verified.
+    description: Role to apply to the member when verified
 
     default: Will create a new role called "Verified Human"
 
@@ -31,7 +40,7 @@ It is also possible (and strongly suggested) to kick (ban is also possible) the 
 
     type: Boolean
 
-    description: Whether to enable or not the easy verification.
+    description: Whether to enable or not the easy verification
 
     default: False
 
@@ -39,43 +48,56 @@ It is also possible (and strongly suggested) to kick (ban is also possible) the 
 
     type: Number
 
-    description: Time limit for taking action for unverified users, in minutes.
-        
+    description: Time limit for taking action for unverified users, in minutes
+
     default: 30
 
 **auto_prune_action**
 
     type: Option
 
-    description: Action to take on unverified users.
+    description: Action to take on unverified users
 
     options: [ Disable, Kick, Ban ]
 
     default: Disabled
 
 :::info
+
 The auto prune action will only affect users without any role.
+
 :::
 
-### Example Usage
+**Example Usage**
 
-```md
-/config panel create role:@Verified Human easy_verification:True auto_prune_time:5 auto_prune_action:Kick 
+<Tabs>
+<TabItem value="withparameters" label="Usage with Parameters" default>
+
+```
+/config panel create role:@Verified Human easy_verification:True auto_prune_time:5 auto_prune_action:Kick
 ```
 
-:::info
-All the parameters are optional, if you do not specify them, the bot will create an anti-bot system with the default options.
-:::
+</TabItem>
+<TabItem value="withoutparameters" label="Usage without Parameters">
 
-```md
+```
 /config panel create
 ```
 
-[DISCORD_EMPLOYEE]: /img/DISCORD_EMPLOYEE.svg
-[PARTNERED_SERVER_OWNER]: /img/PARTNERED_SERVER_OWNER.svg
-[BUGHUNTER_LEVEL_1]: /img/BUGHUNTER_LEVEL_1.svg
-[BUGHUNTER_LEVEL_2]: /img/BUGHUNTER_LEVEL_2.svg
-[DISCORD_CERTIFIED_MODERATOR]: /img/DISCORD_CERTIFIED_MODERATOR.svg
-[HYPESQUAD_EVENTS]: /img/HYPESQUAD_EVENTS.svg
-[EARLY_SUPPORTER]: /img/EARLY_SUPPORTER.svg
-[EARLY_VERIFIED_BOT_DEVELOPER]: /img/EARLY_VERIFIED_BOT_DEVELOPER.svg
+:::note
+
+All the parameters are optional, if you do not specify them, the bot will create an anti-bot system with the default options.
+
+:::
+
+</TabItem>
+</Tabs>
+
+[discord_employee]: /img/DISCORD_EMPLOYEE.svg
+[partnered_server_owner]: /img/PARTNERED_SERVER_OWNER.svg
+[bughunter_level_1]: /img/BUGHUNTER_LEVEL_1.svg
+[bughunter_level_2]: /img/BUGHUNTER_LEVEL_2.svg
+[discord_certified_moderator]: /img/DISCORD_CERTIFIED_MODERATOR.svg
+[hypesquad_events]: /img/HYPESQUAD_EVENTS.svg
+[early_supporter]: /img/EARLY_SUPPORTER.svg
+[early_verified_bot_developer]: /img/EARLY_VERIFIED_BOT_DEVELOPER.svg

@@ -1,60 +1,82 @@
 ---
 sidebar_position: 3
-title: Import / Export Bans
+title: ⚙️ Export / Import Bans
 ---
 
-If you manage multiple communities and want to import or export bans from one server to the other, this is the feature for you. 
+<!-- Imports -->
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-## Import Command
+<!-- Documentation -->
+If you manage multiple communities and want to import or export bans from one server to the other, this is the feature for you.
 
 ```
-/config bans import
+/config bans
 ```
 
-### Parameters
-*Required
+### Export
 
-
-**guild**
-
-    type: Guild Id
-
-    description: Guild to import bans from.
-
-### Example Usage
-
-```md
-/config bans import guild:802536093995892806
-```
-
-:::info
-The guild parameter is optional, if you do not specify it, you will be prompted with a message, requesting you to send a bans file previously exported. (Example: **exportedbans.json** or **exportedbans.csv**)
-:::
-
-```md
-/config bans import
-```
-
-## Export Command
+Export the ban list from the server.
 
 ```
 /config bans export
 ```
 
-### Parameters
-*Required
+**Parameters**
 
+\*Required
 
-**format***
+**format\***
 
     type: Option
 
-    description: File format to export the bans to.
+    description: Type of file to export the bans to
 
-    choices: [ .csv File, .json File ]
+    options: [ .csv File, .json File ]
 
-### Example Usage
+**Example Usage**
 
-```md
-/config bans export format:json
 ```
+/config bans export format:.csv File
+```
+
+### Import
+
+Import a ban list to the server.
+
+```
+/config bans import
+```
+
+**Parameters**
+
+**guild**
+
+    type: String
+
+    description: The guild ID to import bans from or leave empty to import from file
+
+**Example Usage**
+
+<Tabs>
+<TabItem value="guildid" label="Usage with Guild ID" default>
+
+```
+/config bans import guild:966723419775311882
+```
+
+</TabItem>
+<TabItem value="file" label="Usage with File">
+
+```
+/config bans import
+```
+
+:::info
+
+To import the bans, you have to upload a `.csv` or `.json` file previous exported via the `/config bans export` command.
+
+:::
+
+</TabItem>
+</Tabs>
