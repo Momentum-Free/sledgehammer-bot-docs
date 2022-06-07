@@ -3,6 +3,8 @@ sidebar_position: 3
 title: 🎭 Avatarban
 ---
 
+<!-- Imports -->
+
 <!-- Documentation -->
 This command is used to ban users that match a certain avatar.
 
@@ -18,19 +20,19 @@ This command is used to ban users that match a certain avatar.
 
     type: User
 
-    description: User to get the avatar from.
+    description: User to get the avatar from
 
 **reason\***
 
     type: String
 
-    description: Reason to ban the users for.
+    description: Reason to ban the users for
 
 **global**
 
     type: Boolean
 
-    description: Global ban the users?
+    description: Global ban the users
 
     default: False
 
@@ -38,7 +40,7 @@ This command is used to ban users that match a certain avatar.
 
     type: Boolean
 
-    description: Whether to ban accounts with roles or not.
+    description: Whether to ban accounts with roles or not
 
     default: False
 
@@ -46,13 +48,13 @@ This command is used to ban users that match a certain avatar.
 
     type: Number
 
-    description: Accounts older then this value (in days) won't get banned.
+    description: Accounts older then this value (in days) won't get banned
 
 **days**
 
     type: Option
 
-    description: Number of days to delete messages.
+    description: Number of days to delete messages
 
     options: [ 0 to 7 ]
 

@@ -39,7 +39,7 @@ Add a new restriction to the server's blacklists.
 
     type: User
 
-    descrption: The user that the avatar will be used as example
+    description: The user that the avatar will be used as example
 
 **reason\***
 
@@ -213,7 +213,7 @@ Remove a restriction from one of the server's blacklists.
 
     description: The avatar hash that will be removed
 
-    Options: [ All your avatar hashs on the blacklist restrictions ]
+    Options: [ All your avatar hash's on the blacklist restrictions ]
 
 :::info
 

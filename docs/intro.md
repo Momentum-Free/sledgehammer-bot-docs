@@ -28,7 +28,9 @@ This command is used to take an action on certain types of users based on a list
 This command is used to globally ban a specific user.
 
 :::info
+
 The **global ban** command is on the moderator's scope, meaning the ban will be applied on all servers that the bot is in and where the moderator either has `ADMINISTRATOR` permissions or has a whitelisted role.
+
 :::
 
 ### [✏️ Nameban](commands/nameban.md)
@@ -37,7 +39,7 @@ This command is used to ban users based on their username allowing to use Regex 
 
 ### [🚨 Raidban](commands/raidban.md)
 
-This command is used to ban users based on the discord's default join message, selecting a start and a finishing message, you'll be able to select those users (Usefull for raids).
+This command is used to ban users based on the discord's default join message, selecting a start and a finishing message, you'll be able to select those users (useful for raids).
 
 ## 🗺️ Translate for Us
 

@@ -6,8 +6,6 @@ title: ✏️ Nameban
 <!-- Imports -->
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
-import Admonition from '@theme/Admonition';
-import CodeBlock from '@theme/CodeBlock';
 
 <!-- Documentation -->
 This command is used to ban users based on their username allowing to use Regex to have a more accurate filter for the name.
@@ -24,19 +22,19 @@ This command is used to ban users based on their username allowing to use Regex 
 
     type: String
 
-    description: User's name to ban.
+    description: User's name to ban
 
 **reason\***
 
     type: String
 
-    description: Reason to ban the users for.
+    description: Reason to ban the users for
 
 **regex**
 
     type: Boolean
 
-    description: Use the name parameter as a Regex expression.
+    description: Use the name parameter as a Regex expression
 
     default: False
 
@@ -50,7 +48,7 @@ If you want to learn a bit more about Regex you can check [regexr.com](https://r
 
     type: Boolean
 
-    description: Global ban the users?
+    description: Global ban the users
 
     default: False
 
@@ -58,7 +56,7 @@ If you want to learn a bit more about Regex you can check [regexr.com](https://r
 
     type: Boolean
 
-    description: Whether to ban accounts with roles or not!
+    description: Whether to ban accounts with roles or not
 
     default: False
 
@@ -66,13 +64,13 @@ If you want to learn a bit more about Regex you can check [regexr.com](https://r
 
     type: Number
 
-    description: Accounts older then this value (in days) won't get banned!.
+    description: Accounts older then this value (in days) won't get banned
 
 **days**
 
     type: Option
 
-    description: Number of days to delete messages.
+    description: Number of days to delete messages
 
     options: [ 0 to 7 ]
 
@@ -81,15 +79,19 @@ If you want to learn a bit more about Regex you can check [regexr.com](https://r
 **Example Usage**
 
 <Tabs>
-    <TabItem value="withname" label="Usage with Name" default>
-        <CodeBlock>
-            /nameban name:Support reason:Scam
-        </CodeBlock>
-    </TabItem>
-    <TabItem value="withregex" label="Usage with Regex">
-        <CodeBlock>
-            /nameban name:.*(support|help+)+.* reason:Raid regex:True
-        </CodeBlock>
-    </TabItem>
+<TabItem value="withname" label="Usage with Name" default>
+
+```
+/nameban name:Support reason:Scam
+```
+
+</TabItem>
+<TabItem value="withregex" label="Usage with Regex">
+
+```
+/nameban name:.*(support|help+)+.* reason:Raid regex:True
+```
+
+</TabItem>
 </Tabs>
     

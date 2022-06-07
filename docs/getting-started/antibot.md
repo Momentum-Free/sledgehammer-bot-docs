@@ -6,8 +6,6 @@ title: 🤖 Anti-bot System
 <!-- Imports -->
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
-import Admonition from '@theme/Admonition';
-import CodeBlock from '@theme/CodeBlock';
 
 <!-- Documentation -->
 This feature is used to prevent raids, bot accounts (chat bots posing as real users) and malicious users with a unique verification system that will ask users to complete a challenge before having access to the rest of the server.
@@ -18,7 +16,7 @@ The system allows you to enable an `easy_verification` feature which consists in
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|-------------------------------------------------------------------------------------------------------------------------------------------------------------	|
 | ![][discord_employee] `DISCORD_EMPLOYEE` <br/> ![][bughunter_level_1] `BUGHUNTER_LEVEL_1` <br/> ![][bughunter_level_2] `BUGHUNTER_LEVEL_2` <br/> ![][partnered_server_owner] `PARTNERED_SERVER_OWNER` <br/> ![][discord_certified_moderator] `DISCORD_CERTIFIED_MODERATOR` 	| ![][hypesquad_events] `HYPESQUAD_EVENTS` <br/> ![][early_supporter] `EARLY_SUPPORTER` <br/> ![][early_verified_bot_developer] `EARLY_VERIFIED_BOT_DEVELOPER` 	|
 
-It is also possible (and strongly suggested) to kick (ban is also possible) the user if they take longer than **X** minutes to get verified.
+It is also possible (and strongly suggested) to kick (ban is also possible) the user if they take longer than `X` minutes to get verified.
 
 ## Create Command
 
@@ -34,7 +32,7 @@ Used to complete a full setup for the anti-bot system.
 
     type: Role
 
-    description: Role to apply to the member when verified.
+    description: Role to apply to the member when verified
 
     default: Will create a new role called "Verified Human"
 
@@ -42,7 +40,7 @@ Used to complete a full setup for the anti-bot system.
 
     type: Boolean
 
-    description: Whether to enable or not the easy verification.
+    description: Whether to enable or not the easy verification
 
     default: False
 
@@ -50,7 +48,7 @@ Used to complete a full setup for the anti-bot system.
 
     type: Number
 
-    description: Time limit for taking action for unverified users, in minutes.
+    description: Time limit for taking action for unverified users, in minutes
 
     default: 30
 
@@ -58,34 +56,41 @@ Used to complete a full setup for the anti-bot system.
 
     type: Option
 
-    description: Action to take on unverified users.
+    description: Action to take on unverified users
 
     options: [ Disable, Kick, Ban ]
 
     default: Disabled
 
 :::info
+
 The auto prune action will only affect users without any role.
+
 :::
 
 **Example Usage**
 
 <Tabs>
-  <TabItem value="withparameters" label="Usage with Parameters" default>
-    <CodeBlock>
-      /config panel create role:@Verified Human easy_verification:True auto_prune_time:5 auto_prune_action:Kick
-    </CodeBlock>
-  </TabItem>
-  <TabItem value="withoutparameters" label="Usage without Parameters">
-    <CodeBlock>
-      /config panel create
-    </CodeBlock>
-    <Admonition type="note">
-      <p>
-        All the parameters are optional, if you do not specify them, the bot will create an anti-bot system with the default options.
-      </p>
-    </Admonition>
-  </TabItem>
+<TabItem value="withparameters" label="Usage with Parameters" default>
+
+```
+/config panel create role:@Verified Human easy_verification:True auto_prune_time:5 auto_prune_action:Kick
+```
+
+</TabItem>
+<TabItem value="withoutparameters" label="Usage without Parameters">
+
+```
+/config panel create
+```
+
+:::note
+
+All the parameters are optional, if you do not specify them, the bot will create an anti-bot system with the default options.
+
+:::
+
+</TabItem>
 </Tabs>
 
 [discord_employee]: /img/DISCORD_EMPLOYEE.svg
