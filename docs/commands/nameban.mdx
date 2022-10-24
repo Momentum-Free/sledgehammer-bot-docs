@@ -4,10 +4,13 @@ title: ✏️ Nameban
 ---
 
 <!-- Imports -->
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+import CodeBlock from "@theme/CodeBlock";
 
 <!-- Documentation -->
+
 This command is used to ban users based on their username allowing to use Regex to have a more accurate filter for the name.
 
 ```
@@ -20,9 +23,9 @@ This command is used to ban users based on their username allowing to use Regex 
 
 **name\***
 
-    type: String
+    type: String | Regex
 
-    description: User's name to ban
+    description: Users' name to ban | Regex to match the users' name to ban
 
 **reason\***
 
@@ -40,7 +43,10 @@ This command is used to ban users based on their username allowing to use Regex 
 
 :::info
 
-If you want to learn a bit more about Regex you can check [regexr.com](https://regexr.com) to help you build your expressions.
+To add the case insensitive flag to the regex, add `(?i)` at the start/end of the regex.
+
+If you want to learn a bit more about Regex you can check [regexr.com](https://regexr.com)
+to help you build your expressions.
 
 :::
 
@@ -79,19 +85,10 @@ If you want to learn a bit more about Regex you can check [regexr.com](https://r
 **Example Usage**
 
 <Tabs>
-<TabItem value="withname" label="Usage with Name" default>
-
-```
-/nameban name:Support reason:Scam
-```
-
-</TabItem>
-<TabItem value="withregex" label="Usage with Regex">
-
-```
-/nameban name:.*(support|help+)+.* reason:Raid regex:True
-```
-
-</TabItem>
+  <TabItem value='withname' label='with Name' default>
+    <CodeBlock>/nameban name:Support reason:Scam</CodeBlock>
+  </TabItem>
+  <TabItem value='withregex' label='with Regex'>
+    <CodeBlock>/nameban name:(?i)support reason:Raid regex:True</CodeBlock>
+  </TabItem>
 </Tabs>
-    

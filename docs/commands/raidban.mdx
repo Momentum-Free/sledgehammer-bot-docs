@@ -4,10 +4,12 @@ title: 🚨 Raidban
 ---
 
 <!-- Imports -->
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
 
 <!-- Documentation -->
+
 This command is used to ban users based on the discord's default join message, selecting a start and a finishing message, you'll be able to select those users (useful for raids).
 
 ```
@@ -46,7 +48,7 @@ If you do not know how to grab the message id/link, check [this article](https:/
 
     type: Text Channel
 
-    description: Channel of these messages
+    description: Channel where the messages were sent
 
 :::note
 
@@ -74,7 +76,7 @@ This option is only needed if you provided message id.
 
     type: Number
 
-    description: Accounts older then this value (in days) won't get banned
+    description: Accounts older than this value (in days) won't get banned
 
 **days**
 
@@ -89,14 +91,14 @@ This option is only needed if you provided message id.
 **Example Usage**
 
 <Tabs>
-<TabItem value="withids" label="Usage with Message ID" default>
+<TabItem value="withIds" label="Usage with Message ID" default>
 
 ```
 /raidban first_message:966723570824773703 last_message:968461919289765908 reason:Raid channel:#welcome
 ```
 
 </TabItem>
-<TabItem value="withlinks" label="Usage with Message Link">
+<TabItem value="withLinks" label="Usage with Message Link">
 
 ```
 /raidban first_message:https://discord.com/channels/966723419775311882/966723419775311885/966723570824773703 last_message:https://discord.com/channels/966723419775311882/966723419775311885/967010103322636298 reason:Raid
@@ -104,7 +106,6 @@ This option is only needed if you provided message id.
 
 </TabItem>
 </Tabs>
-
 
 :::info
 

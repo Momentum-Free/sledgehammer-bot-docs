@@ -4,10 +4,14 @@ title: 🔧 Config
 ---
 
 <!-- Imports -->
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+import CodeBlock from "@theme/CodeBlock";
+import BadgeTable from "/src/components/BadgeTable";
 
 <!-- Documentation -->
+
 This command is used to configure multiple aspects and functionalities of the bot.
 
 ```
@@ -24,7 +28,7 @@ This feature will delete all messages according to the configuration after `X` m
 
 ### Enable
 
-Adds a auto delete channel to the list
+Adds an auto delete channel to the server.
 
 ```
 /config autodelete enable
@@ -70,7 +74,7 @@ Adds a auto delete channel to the list
 
 ### Disable
 
-Removes a auto delete channel from the list.
+Removes a auto delete channel from the server.
 
 ```
 /config autodelete disable
@@ -94,7 +98,7 @@ Removes a auto delete channel from the list.
 
 ## Bans
 
-This feature will allow you to import and export bans from the server.
+This feature will allow you to export and import bans from one server to another.
 
 ```
 /config bans
@@ -136,35 +140,39 @@ Import a ban list to the server.
 
 **Parameters**
 
+:::caution
+
+Both parameters in this command are optional, but you **must** provide at least one.
+
+:::
+
+**file**
+
+    type: File
+
+    description: The file to import the bans from
+
+:::info
+
+You need upload a `.csv` or `.json` file previous exported via the [`/config bans export`](#export) command.
+
+:::
+
 **guild**
 
-    type: String
+    type: GuildId
 
-    description: The guild ID to import bans from or leave empty to import from file
+    description: The GuildId to import bans from
 
 **Example Usage**
 
 <Tabs>
-<TabItem value="guildid" label="Usage with Guild ID" default>
-
-```
-/config bans import guild:966723419775311882
-```
-
-</TabItem>
-<TabItem value="file" label="Usage with File">
-
-```
-/config bans import
-```
-
-:::info
-
-To import the bans, you have to upload a `.csv` or `.json` file previous exported via the `/config bans export` command.
-
-:::
-
-</TabItem>
+  <TabItem value='withFile' label='with File' default>
+    <CodeBlock>/config bans import file:exportFile.json</CodeBlock>
+  </TabItem>
+  <TabItem value='withGuild' label='with Guild'>
+    <CodeBlock>/config bans import guild:1029352744999456859</CodeBlock>
+  </TabItem>
 </Tabs>
 
 ## Logs
@@ -175,6 +183,14 @@ This feature will allow you to setup channels to keep track of all the bans occu
 /config logs
 ```
 
+### Enable
+
+Adds a log channel to the server.
+
+```
+/config logs enable
+```
+
 **Parameters**
 
 \*Required
@@ -183,42 +199,45 @@ This feature will allow you to setup channels to keep track of all the bans occu
 
     type: Text Channel
 
-    description: The channel to add to log events.
-
-**enabled\***
-
-    type: Boolean
-
-    description: Whether this channel will receive logging messages or not.
+    description: The channel where the logs should be sent
 
 **Example Usage**
 
-<Tabs>
-<TabItem value="enable" label="Enable" default>
-
 ```
-/config logs channel:#sledge-logs enabled:True
+/config logs enable channel:#logging
 ```
 
-</TabItem>
-<TabItem value="disable" label="Disable">
+### Disable
+
+Removes a log channel from the server.
 
 ```
-/config logs channel:#sledge-logs enabled:False
+/config autodelete disable
 ```
 
-</TabItem>
-</Tabs>
+**Parameters**
+
+\*Required
+
+**channel\***
+
+    type: Text Channel
+
+    description: The channel where the logs are configured
+
+**Example Usage**
+
+```
+/config logs disable channel:#logging
+```
 
 ## Panel
 
 This feature is used to prevent raids, bot accounts (chat bots posing as real users) and malicious users with a unique verification system that will ask users to complete a challenge before having access to the rest of the server.
 
-The system allows you to enable an `easy verification` feature which consists in two parts:
+The system allows you to enable an **badge check** feature which consists in two parts:
 
-| Users that have the following badges will be automatically verified when joining                                                                                                                                                                                           	| Users that have the following badges will be automatically verified upon request (no challenge needed)                                                      	|
-|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|-------------------------------------------------------------------------------------------------------------------------------------------------------------	|
-| ![][discord_employee] `DISCORD_EMPLOYEE` <br/> ![][bughunter_level_1] `BUGHUNTER_LEVEL_1` <br/> ![][bughunter_level_2] `BUGHUNTER_LEVEL_2` <br/> ![][partnered_server_owner] `PARTNERED_SERVER_OWNER` <br/> ![][discord_certified_moderator] `DISCORD_CERTIFIED_MODERATOR` 	| ![][hypesquad_events] `HYPESQUAD_EVENTS` <br/> ![][early_supporter] `EARLY_SUPPORTER` <br/> ![][early_verified_bot_developer] `EARLY_VERIFIED_BOT_DEVELOPER` 	|
+<BadgeTable />
 
 It is also possible (and strongly suggested) to kick (ban is also possible) the user if they take longer than `X` minutes to get verified.
 
@@ -246,11 +265,11 @@ Used to complete a full setup for the anti-bot system.
 
     default: Will create a new role called "Verified Human"
 
-**easy_verification**
+**badge_check**
 
     type: Boolean
 
-    description: Whether to enable or not the easy verification
+    description: Whether to enable or not the badge check
 
     default: False
 
@@ -275,14 +294,14 @@ Used to complete a full setup for the anti-bot system.
 **Example Usage**
 
 <Tabs>
-<TabItem value="withparameters" label="Usage with Parameters" default>
+<TabItem value="withParameters" label="with Parameters" default>
 
 ```
-/config panel create role:@Verified Human easy_verification:True auto_prune_time:5 auto_prune_action:Kick
+/config panel create role:@Verified Human badge_check:True auto_prune_time:5 auto_prune_action:Kick
 ```
 
 </TabItem>
-<TabItem value="withoutparameters" label="Usage without Parameters">
+<TabItem value="withoutParameters" label="without Parameters">
 
 ```
 /config panel create
@@ -321,39 +340,33 @@ In case you need to send or resend the anti-bot verification message.
 
     description: Language to send the message in
 
-    options: [ English (🇬🇧), Portuguese (🇵🇹), Ukrainian (🇺🇦), Russian (🇷🇺), French (🇫🇷) ]
+    options: [ 🇬🇧 | English, 🇫🇷 | French, 🇵🇹 | Portuguese, 🇷🇺 | Russian, 🇺🇦 | Ukrainian ]
 
-    default: English (🇬🇧)
+    default: 🇬🇧 | English
 
 :::info
 
-If you speak a language that is not currently supported by Sledgehammer, you can create an pull request with your language on the **[Github repo](https://github.com/Momentum-Free/sledgehammer-bot-translations)**.
+If you speak a language that is not currently supported by Sledgehammer, you can create an pull request with your translation on the **[Github repo](https://github.com/Momentum-Free/sledgehammer-bot-translations)**.
 
 :::
 
 **Example Usage**
 
 <Tabs>
-<TabItem value="english" label="English Message" default>
-
-```
-/config panel send send_channel:#verify
-```
-
-**or**
-
-```
-/config panel send send_channel:#verify language:English
-```
-
-</TabItem>
-<TabItem value="portuguese" label="Portuguese Message">
-
-```
-/config panel send send_channel:#verify language:Portuguese
-```
-
-</TabItem>
+  <TabItem value='english' label='English Message' default>
+    <CodeBlock>/config panel send send_channel:#verify</CodeBlock>
+    <p>
+      <strong>or</strong>
+    </p>
+    <CodeBlock>
+      /config panel send send_channel:#verify language:🇬🇧 | English
+    </CodeBlock>
+  </TabItem>
+  <TabItem value='portuguese' label='Portuguese Message'>
+    <CodeBlock>
+      /config panel send send_channel:#verify language:🇵🇹 | Portuguese
+    </CodeBlock>
+  </TabItem>
 </Tabs>
 
 ### Update
@@ -384,11 +397,11 @@ Used to update specific settings for the anti-bot system.
 
     default: Use previously saved channel
 
-**easy_verification**
+**badge_check**
 
     type: Boolean
 
-    description: Whether to enable or not the easy verification
+    description: Whether to enable or not the badge check
 
     default: Use previously saved value
 
@@ -419,29 +432,25 @@ The auto prune action will only affect users without any role.
 **Example Usage**
 
 <Tabs>
-<TabItem value="oneparameter" label="Update one parameter" default>
-
-```
-/config panel update auto_prune_time:1
-```
-
-</TabItem>
-<TabItem value="multipleparameters" label="Update multiple parameters">
-
-```
-/config panel update auto_prune_time:1 auto_prune_action:Disable
-```
-
-</TabItem>
+  <TabItem value='oneParameter' label='Update one parameter' default>
+    <CodeBlock>/config panel update auto_prune_time:1</CodeBlock>
+  </TabItem>
+  <TabItem value='multipleParameters' label='Update multiple parameters'>
+    <CodeBlock>
+      /config panel update auto_prune_time:1 auto_prune_action:Disable
+    </CodeBlock>
+  </TabItem>
 </Tabs>
 
 :::note
+
 The parameters that weren't updated will be the previous ones.
+
 :::
 
 ### Disable
 
-Used to disable the anti-bot system
+Used to disable the anti-bot system.
 
 ```
 /config panel disable
@@ -454,12 +463,3 @@ This feature will return you a report about the bot's configurations on the serv
 ```
 /config report
 ```
-
-[discord_employee]: /img/DISCORD_EMPLOYEE.svg
-[partnered_server_owner]: /img/PARTNERED_SERVER_OWNER.svg
-[bughunter_level_1]: /img/BUGHUNTER_LEVEL_1.svg
-[bughunter_level_2]: /img/BUGHUNTER_LEVEL_2.svg
-[discord_certified_moderator]: /img/DISCORD_CERTIFIED_MODERATOR.svg
-[hypesquad_events]: /img/HYPESQUAD_EVENTS.svg
-[early_supporter]: /img/EARLY_SUPPORTER.svg
-[early_verified_bot_developer]: /img/EARLY_VERIFIED_BOT_DEVELOPER.svg
