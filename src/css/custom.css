@@ -1,7 +1,11 @@
-.markdown td > img {
+.markdown td > svg {
   vertical-align: middle;
 }
 
-.mardown th {
-  width: auto;
+.markdown th {
+  width: 50%;
+}
+
+code > span {
+  color: #4c67d6;
 }

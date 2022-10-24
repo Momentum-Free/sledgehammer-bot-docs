@@ -6,7 +6,7 @@ const BlockList = [
   {
     description: (
       <>
-        We at <a href="https://momentum-one.io/">Momentum Lancer LDA</a>{" "}
+        We at <a href='https://momentum-one.io/'>Momentum Lancer LDA</a>{" "}
         (company behind Sledgehammer bot) know you care about your personal
         information and we take your privacy seriously. Please read the
         following to learn more about our Privacy Policy.
@@ -69,7 +69,7 @@ const BlockList = [
         Lichtenstein, Norway, or Iceland, you may have additional rights under
         the EU General Data Protection Regulation (the “GDPR”) with respect to
         your Personal Data. In this event, please refer to our{" "}
-        <a href="/gdpr">GDPR Privacy Notice</a>, as it applies to you too.
+        <a href='/gdpr'>GDPR Privacy Notice</a>, as it applies to you too.
       </>
     ),
   },
@@ -78,7 +78,7 @@ const BlockList = [
       <>
         If you have any questions or concerns regarding our privacy policies,
         please send us a detailed message to{" "}
-        <a href="mailto:support@momentum-one.io">support@momentum-one.io</a>,
+        <a href='mailto:support@momentum-one.io'>support@momentum-one.io</a>,
         and we will try to resolve your concerns.
       </>
     ),
@@ -88,7 +88,7 @@ const BlockList = [
 function Block({ description }) {
   return (
     <div className={clsx("col")}>
-      <div className="padding-horiz--md">
+      <div className='padding-horiz--md'>
         <p>{description}</p>
       </div>
     </div>
@@ -98,7 +98,7 @@ function Block({ description }) {
 export default function PrivacyPolicy() {
   return (
     <section className={styles.section}>
-      <div className="container">
+      <div className='container'>
         <h1 className={styles.title}>Privacy Policy</h1>
         {BlockList.map((props, idx) => (
           <Block key={idx} {...props} />

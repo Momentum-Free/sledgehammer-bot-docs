@@ -1,17 +1,14 @@
-import React from 'react';
-import Layout from '@theme/Layout';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import GDPR from '../components/GDPR';
-
+import GDPR from "../components/GDPR";
+import Layout from "@theme/Layout";
+import React from "react";
 
 export default function Home() {
-  const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
       title={`GDPR`}
-      description="Keeping Discord servers safer from scammers, spammers and all the malicious actors out there">
+      description='Keeping Discord servers safer from scammers, spammers and all the malicious actors out there'>
       <main>
-       <GDPR />
+        <GDPR />
       </main>
     </Layout>
   );
