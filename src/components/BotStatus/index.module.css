@@ -1,0 +1,137 @@
+:root {
+  --shard-ready: #44c767;
+  --shard-connecting: #ffd255;
+  --shard-reconnecting: #ffd255;
+  --shard-idle: #ffd255;
+  --shard-nearly: #ffd255;
+  --shard-disconnected: #e62e00;
+  --shard-waitingforguilds: #58ffff;
+  --shard-identifying: #58ffff;
+  --shard-resuming: #58ffff;
+}
+
+.shard-ready {
+  background-color: var(--shard-ready);
+}
+
+.shard-connecting {
+  background-color: var(--shard-connecting);
+}
+
+.shard-reconnecting {
+  background-color: var(--shard-reconnecting);
+}
+
+.shard-idle {
+  background-color: var(--shard-idle);
+}
+
+.shard-nearly {
+  background-color: var(--shard-nearly);
+}
+
+.shard-disconnected {
+  background-color: var(--shard-disconnected);
+}
+
+.shard-waitingforguilds {
+  background-color: var(--shard-waitingforguilds);
+}
+
+.shard-identifying {
+  background-color: var(--shard-identifying);
+}
+
+.shard-resuming {
+  background-color: var(--shard-resuming);
+}
+
+.shard-text {
+  font-weight: bold;
+  margin: 5px;
+}
+
+.shard-ready-text {
+  color: var(--shard-ready);
+}
+
+.shard-connecting-text {
+  color: var(--shard-connecting);
+}
+
+.shard-reconnecting-text {
+  color: var(--shard-reconnecting);
+}
+
+.shard-idle-text {
+  color: var(--shard-idle);
+}
+
+.shard-nearly-text {
+  color: var(--shard-nearly);
+}
+
+.shard-disconnected-text {
+  color: var(--shard-disconnected);
+}
+
+.shard-waitingforguilds-text {
+  color: var(--shard-waitingforguilds);
+}
+
+.shard-identifying-text {
+  color: var(--shard-identifying);
+}
+
+.shard-resuming-text {
+  color: var(--shard-resuming);
+}
+
+.section {
+  max-width: 70vw;
+  margin: 0 auto;
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+}
+
+.div {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: 1px solid inherit;
+  cursor: pointer;
+  color: #ffffff !important;
+  font-family: Arial;
+  font-size: 25px;
+  font-weight: bold;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+  margin: 10px;
+  position: relative;
+}
+
+.tooltip {
+  position: absolute;
+  display: none;
+  background-color: #303846;
+  font-size: 15px;
+  font-weight: normal;
+  padding: 10px;
+  border-radius: 10px;
+  top: 0;
+  left: 50%;
+  min-width: 130px;
+  transform: translate(-50%, -100%);
+}
+
+.badge:hover .tooltip {
+  display: inline-block;
+}

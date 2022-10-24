@@ -1,5 +1,7 @@
+require("dotenv").config();
 const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
+const { MOMENTUM_WEBSITE, DISCORD_INVITE, SLEDGEHAMMER_API } = process.env;
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
@@ -13,7 +15,6 @@ module.exports = {
   favicon: "img/favicon.ico",
   organizationName: "Momentum-Free", // Usually your GitHub org/user name.
   projectName: "sledgehammer-bot-docs", // Usually your repo name.
-  projectName: "Sledgehammer Discord Bot", // Usually your repo name.
   themeConfig: {
     colorMode: { defaultMode: "dark" },
     metadata: [
@@ -65,11 +66,9 @@ module.exports = {
       },
     ],
     navbar: {
-      title: "Sledgehammer Discord Bot",
+      title: "Sledgehammer",
       logo: {
-        alt: "Momentum One Logo",
-        src: "img/logo.svg",
-        alt: "Sledgehammer",
+        alt: "Sledgehammer Logo",
         src: "img/SledgehammerLogo.png",
       },
       items: [
@@ -81,7 +80,12 @@ module.exports = {
         },
         // {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: "https://momentum-one.io",
+          href: "/status",
+          label: "Status",
+          position: "left",
+        },
+        {
+          href: MOMENTUM_WEBSITE,
           label: "Momentum One",
           position: "right",
         },
@@ -112,7 +116,7 @@ module.exports = {
           items: [
             {
               label: "Discord",
-              href: "https://discord.gg/5bTsAPnfje",
+              href: DISCORD_INVITE,
             },
             {
               label: "LinkedIn",
@@ -142,7 +146,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Momentum One, Lda.`,
+      copyright: `Copyright © ${new Date().getFullYear()} <a href="${MOMENTUM_WEBSITE}">Momentum One, Lda</a>.`,
     },
     prism: {
       theme: lightCodeTheme,
@@ -154,6 +158,11 @@ module.exports = {
       },
     },
   },
+  customFields: {
+    DISCORD_INVITE,
+    MOMENTUM_WEBSITE,
+    SLEDGEHAMMER_API,
+  },
   presets: [
     [
       "@docusaurus/preset-classic",
@@ -164,8 +173,7 @@ module.exports = {
         docs: {
           sidebarCollapsed: false,
           sidebarPath: require.resolve("./sidebars.js"),
-          editUrl:
-            "https://github.com/Momentum-Free/welcome/edit/master/website/",
+          editUrl: "https://github.com/Momentum-Free/sledgehammer-bot-docs",
         },
       },
     ],
