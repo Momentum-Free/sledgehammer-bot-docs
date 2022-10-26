@@ -92,15 +92,15 @@ module.exports = {
           items: [
             {
               label: "Introduction",
-              to: "/docs/intro",
+              to: "/",
             },
             {
               label: "Anti-bot System",
-              to: "/docs/getting-started/antibot",
+              to: "/getting-started/antibot",
             },
             {
               label: "Config Command",
-              to: "/docs/commands/config",
+              to: "/commands/config",
             },
           ],
         },
