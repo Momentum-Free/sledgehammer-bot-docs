@@ -66,10 +66,9 @@ module.exports = {
       },
     ],
     navbar: {
-      title: "Sledgehammer",
       logo: {
         alt: "Sledgehammer Logo",
-        src: "img/SledgehammerLogo.png",
+        src: "img/logo.png",
       },
       items: [
         {
