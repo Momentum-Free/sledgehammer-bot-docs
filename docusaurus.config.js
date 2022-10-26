@@ -73,13 +73,6 @@ module.exports = {
       },
       items: [
         {
-          type: "doc",
-          docId: "intro",
-          position: "left",
-          label: "Docs",
-        },
-        // {to: '/blog', label: 'Blog', position: 'left'},
-        {
           href: "/status",
           label: "Status",
           position: "left",
@@ -171,10 +164,12 @@ module.exports = {
           customCss: [require.resolve("./src/css/custom.css")],
         },
         docs: {
+          routeBasePath: "/",
           sidebarCollapsed: false,
           sidebarPath: require.resolve("./sidebars.js"),
           editUrl: "https://github.com/Momentum-Free/sledgehammer-bot-docs",
         },
+        blog: false,
       },
     ],
   ],
