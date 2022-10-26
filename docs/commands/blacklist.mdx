@@ -4,10 +4,12 @@ title: ⛔ Blacklist
 ---
 
 <!-- Imports -->
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
 
 <!-- Documentation -->
+
 This command is used to take an action on certain types of users based on a list of restrictions.
 
 ```
@@ -22,14 +24,20 @@ Add a new restriction to the server's blacklists.
 /blacklist add
 ```
 
-<Tabs>
-<TabItem value="addbyavatar" label="Avatar" default>
+<Tabs groupId="blacklist">
+<TabItem value="byAvatar" label="Avatar">
 
 <h3>Avatar</h3>
 
 ```
 /blacklist add by_avatar
 ```
+
+:::caution
+
+This feature is temporarily disabled due to Discord's change on how avatars work.
+
+:::
 
 **Parameters**
 
@@ -70,7 +78,7 @@ Add a new restriction to the server's blacklists.
 ```
 
 </TabItem>
-<TabItem value="byname" label="Name" default>
+<TabItem value="byName" label="Name" default>
 
 <h3>Name</h3>
 
@@ -84,9 +92,17 @@ Add a new restriction to the server's blacklists.
 
 **name\***
 
-    type: String
+    type: String | Regex
 
-    description: The name to add to the blacklist
+    description: Users' name to be blacklisted | Regex to match the users' name to be blacklisted
+
+:::info
+
+To add the case insensitive flag to the regex, add `(?i)` at the start/end of the regex.
+
+If you want to learn a bit more about Regex you can check [regexr.com](https://regexr.com) to help you build your expressions.
+
+:::
 
 **reason\***
 
@@ -114,30 +130,30 @@ Add a new restriction to the server's blacklists.
 
     type: Boolean
 
-    description: Use the name parameter as a Regex expression.
+    description: Use the name parameter as a Regex expression
 
     default: False
 
 **Example Usage**
 
 <Tabs>
-<TabItem value="withname" label="Usage with name" default>
+<TabItem value="withName" label="with Name" default>
 
 ```
-/blacklist add by_name name:Bitcoin reason:Bitcoin name action:Kick warn:True
+/blacklist add by_name name:Admin reason:Admin action:Kick warn:True
 ```
 
 </TabItem>
-<TabItem value="withregex" label="Usage with Regex">
+<TabItem value="withRegex" label="with Regex">
 
 ```
-/blacklist add by_name name:.*(support|help+)+.* reason:Help/Support Scam action:Kick warn:True use_regex:True
+/blacklist add by_name name:(?i)support reason:Support Scam action:Kick warn:True use_regex:True
 ```
 
 </TabItem>
 </Tabs>
 </TabItem>
-<TabItem value="byuser" label="User">
+<TabItem value="byUser" label="User">
 
 <h3>User</h3>
 
@@ -151,7 +167,7 @@ Add a new restriction to the server's blacklists.
 
 **user\***
 
-    type: User
+    type: User | UserId
 
     description: User to add to the blacklist
 
@@ -194,14 +210,20 @@ Remove a restriction from one of the server's blacklists.
 /blacklist remove
 ```
 
-<Tabs>
-<TabItem value="removebyavatar" label="Avatar" default>
+<Tabs groupId="blacklist">
+<TabItem value="byAvatar" label="Avatar">
 
 <h3>Avatar</h3>
 
 ```
 /blacklist remove by_avatar
 ```
+
+:::caution
+
+This feature is temporarily disabled due to Discord's change on how avatars work.
+
+:::
 
 **Parameters**
 
@@ -213,7 +235,7 @@ Remove a restriction from one of the server's blacklists.
 
     description: The avatar hash that will be removed
 
-    Options: [ All your avatar hash's on the blacklist restrictions ]
+    options: [ All your avatar hash's on the blacklist restrictions ]
 
 :::info
 
@@ -228,7 +250,7 @@ These options only show up if you have at least one avatar blacklist restriction
 ```
 
 </TabItem>
-<TabItem value="byname" label="Name" default>
+<TabItem value="byName" label="Name" default>
 
 <h3>Name</h3>
 
@@ -261,7 +283,7 @@ These options only show up if you have at least one name blacklist restriction.
 ```
 
 </TabItem>
-<TabItem value="byuser" label="User">
+<TabItem value="byUser" label="User">
 
 <h3>User</h3>
 
@@ -295,67 +317,3 @@ These options only show up if you have at least one user id blacklist restrictio
 
 </TabItem>
 </Tabs>
-
-## Subscribe
-
-Subscribe to another server's blacklist.
-
-```
-/blacklist subscribe
-```
-
-**Parameters**
-
-\*Required
-
-**guildid\***
-
-    type: Guild Id
-
-    description: Guild to subscribe the blacklist
-
-**type\***
-
-    type: Option
-
-    description: Type of the blacklist
-
-    options: [ Avatar Blacklist, Name Blacklist, User Blacklist ]
-
-**Example Usage**
-
-```
-/blacklist subscribe guildid:974621155140960256 type:User Blacklist
-```
-
-## Unsubscribe
-
-Unsubscribe another sever's blacklist.
-
-```
-/blacklist  unsubscribe
-```
-
-**Parameters**
-
-\*Required
-
-**guildid\***
-
-    type: Guild Id
-
-    description: Guild to unsubscribe the blacklist
-
-**type\***
-
-    type: Option
-
-    description: Type of the blacklist
-
-    options: [ Avatar Blacklist, Name Blacklist, User Blacklist ]
-
-**Example Usage**
-
-```
-/blacklist unsubscribe guildid:974621155140960256 type:Avatar Blacklist
-```

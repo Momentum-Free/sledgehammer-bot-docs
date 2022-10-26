@@ -1,0 +1,89 @@
+---
+sidebar_position: 3
+title: ⚙️ Export / Import Bans
+---
+
+<!-- Imports -->
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+import CodeBlock from "@theme/CodeBlock";
+
+<!-- Documentation -->
+
+If you manage multiple communities and want to export or import bans from one server to the other, this is the feature for you.
+
+```
+/config bans
+```
+
+### Export
+
+Export the ban list from the server.
+
+```
+/config bans export
+```
+
+**Parameters**
+
+\*Required
+
+**format\***
+
+    type: Option
+
+    description: Type of file to export the bans to
+
+    options: [ .csv File, .json File ]
+
+**Example Usage**
+
+```
+/config bans export format:.csv File
+```
+
+### Import
+
+Import a ban list to the server.
+
+```
+/config bans import
+```
+
+**Parameters**
+
+:::caution
+
+Both parameters in this command are optional, but you **must** provide at least one.
+
+:::
+
+**file**
+
+    type: File
+
+    description: The file to import the bans from
+
+:::info
+
+You need upload a `.csv` or `.json` file previous exported via the [`/config bans export`](#export) command.
+
+:::
+
+**guild**
+
+    type: GuildId
+
+    description: The GuildId to import bans from
+
+**Example Usage**
+
+<Tabs>
+  <TabItem value='withfile' label='with File' default>
+    <CodeBlock>/config bans import file:exportFile.json</CodeBlock>
+  </TabItem>
+  <TabItem value='withguild' label='with Guild'>
+    <CodeBlock>/config bans import guild:1029352744999456859</CodeBlock>
+  </TabItem>
+</Tabs>

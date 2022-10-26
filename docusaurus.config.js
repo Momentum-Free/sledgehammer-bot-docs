@@ -1,5 +1,7 @@
+require("dotenv").config();
 const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
+const { MOMENTUM_WEBSITE, DISCORD_INVITE, SLEDGEHAMMER_API } = process.env;
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
@@ -13,7 +15,6 @@ module.exports = {
   favicon: "img/favicon.ico",
   organizationName: "Momentum-Free", // Usually your GitHub org/user name.
   projectName: "sledgehammer-bot-docs", // Usually your repo name.
-  projectName: "Sledgehammer Discord Bot", // Usually your repo name.
   themeConfig: {
     colorMode: { defaultMode: "dark" },
     metadata: [
@@ -65,23 +66,18 @@ module.exports = {
       },
     ],
     navbar: {
-      title: "Sledgehammer Discord Bot",
       logo: {
-        alt: "Momentum One Logo",
-        src: "img/logo.svg",
-        alt: "Sledgehammer",
-        src: "img/SledgehammerLogo.png",
+        alt: "Sledgehammer Logo",
+        src: "img/logo.png",
       },
       items: [
         {
-          type: "doc",
-          docId: "intro",
+          href: "/status",
+          label: "Status",
           position: "left",
-          label: "Docs",
         },
-        // {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: "https://momentum-one.io",
+          href: MOMENTUM_WEBSITE,
           label: "Momentum One",
           position: "right",
         },
@@ -95,15 +91,15 @@ module.exports = {
           items: [
             {
               label: "Introduction",
-              to: "/docs/intro",
+              to: "/",
             },
             {
               label: "Anti-bot System",
-              to: "/docs/getting-started/antibot",
+              to: "/getting-started/antibot",
             },
             {
               label: "Config Command",
-              to: "/docs/commands/config",
+              to: "/commands/config",
             },
           ],
         },
@@ -112,7 +108,7 @@ module.exports = {
           items: [
             {
               label: "Discord",
-              href: "https://discord.gg/5bTsAPnfje",
+              href: DISCORD_INVITE,
             },
             {
               label: "LinkedIn",
@@ -142,7 +138,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Momentum One, Lda.`,
+      copyright: `Copyright © ${new Date().getFullYear()} <a href="${MOMENTUM_WEBSITE}">Momentum One, Lda</a>.`,
     },
     prism: {
       theme: lightCodeTheme,
@@ -154,6 +150,11 @@ module.exports = {
       },
     },
   },
+  customFields: {
+    DISCORD_INVITE,
+    MOMENTUM_WEBSITE,
+    SLEDGEHAMMER_API,
+  },
   presets: [
     [
       "@docusaurus/preset-classic",
@@ -162,11 +163,12 @@ module.exports = {
           customCss: [require.resolve("./src/css/custom.css")],
         },
         docs: {
+          routeBasePath: "/",
           sidebarCollapsed: false,
           sidebarPath: require.resolve("./sidebars.js"),
-          editUrl:
-            "https://github.com/Momentum-Free/welcome/edit/master/website/",
+          editUrl: "https://github.com/Momentum-Free/sledgehammer-bot-docs",
         },
+        blog: false,
       },
     ],
   ],

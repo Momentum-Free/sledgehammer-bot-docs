@@ -1,0 +1,87 @@
+---
+sidebar_position: 2
+title: 🌐 Globalban / Globalunban
+---
+
+<!-- Imports -->
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+import CodeBlock from "@theme/CodeBlock";
+
+<!-- Documentation -->
+
+:::info
+
+Both **global** commands are on the moderator's scope, meaning the ban/unban will be applied on all servers that the bot is **in** and where the **moderator** either has `ADMINISTRATOR` or `BAN_MANAGER` permission.
+
+:::
+
+## Globalban
+
+This command is used to globally ban a specific user.
+
+```
+/globalban
+```
+
+**Parameters**
+
+\*Required
+
+**user\***
+
+    type: User | UserId
+
+    description: User to globally ban
+
+**reason\***
+
+    type: String
+
+    description: Reason to ban the user for
+
+**days**
+
+    type: Option
+
+    description: Number of days to delete messages
+
+    options: [ 0 to 7 ]
+
+    default: 7
+
+**Example Usage**
+
+<Tabs>
+  <TabItem value='user' label='with User'>
+    <CodeBlock>/globalban user:@user#0000 reason:Spam days:4</CodeBlock>
+  </TabItem>
+  <TabItem value='userid' label='with UserId'>
+    <CodeBlock>/globalban user:24318355011831701 reason:Scam</CodeBlock>
+  </TabItem>
+</Tabs>
+
+## Globalunban
+
+This command is used to globally unban a specific user in case a mistake was made.
+
+```
+/globalunban
+```
+
+**Parameters**
+
+\*Required
+
+**user\***
+
+    type: UserId
+
+    description: UserId to globally unban
+
+**Example Usage**
+
+```
+/globalunban user:312709238164291585
+```
