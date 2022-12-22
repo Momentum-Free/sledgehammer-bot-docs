@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 import axios from "axios";
-import { msToRelativeTime } from "../../utils";
+import { msToRelativeTime, optimizeNumbers } from "../../utils";
 import styles from "./index.module.css";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 
@@ -76,6 +76,11 @@ function BotStatus() {
         }, 0)}
         /{status.length} Shards Online
       </p>
+      <p>
+        <strong>Total Guilds</strong> {optimizeNumbers(status.reduce((acc, s) => acc + s.guilds, 0))}
+        <br />
+        <strong>Total Users</strong> {optimizeNumbers(status.reduce((acc, s) => acc + s.users, 0))}
+      </p>
       <p>Reloading status in {reload}s</p>
 
       {/* <p>
@@ -104,9 +109,9 @@ function BotStatus() {
                 <span>
                   <strong>Status</strong> {clientStatuses[s.status].name}
                   <br />
-                  <strong>Guilds</strong> {s.guilds}
+                  <strong>Guilds</strong> {optimizeNumbers(s.guilds)}
                   <br />
-                  <strong>Users</strong> {s.users}
+                  <strong>Users</strong> {optimizeNumbers(s.users)}
                   <br />
                   <strong>Ping</strong> {s.ping}ms
                   <br />

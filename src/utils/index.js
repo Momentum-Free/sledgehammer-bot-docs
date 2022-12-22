@@ -12,3 +12,7 @@ export function msToRelativeTime(ms) {
     hours >= 1 ? `${Math.floor(hours)}h` : ""
   } ${minutes >= 1 ? `${Math.ceil(minutes)}m` : ""}`;
 }
+
+export function optimizeNumbers(number) {
+  return Intl.NumberFormat("en", { notation: "compact" }).format(number);
+}
