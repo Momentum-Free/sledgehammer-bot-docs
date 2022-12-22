@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
+import { msToTime, optimizeNumbers } from "../../utils";
 
 import axios from "axios";
-import { msToRelativeTime, optimizeNumbers } from "../../utils";
 import styles from "./index.module.css";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 
@@ -115,7 +115,7 @@ function BotStatus() {
                   <br />
                   <strong>Ping</strong> {s.ping}ms
                   <br />
-                  <strong>Uptime</strong> {msToRelativeTime(s.uptime)}
+                  <strong>Uptime</strong> {msToTime(s.uptime)}
                 </span>
               </div>
             </div>
