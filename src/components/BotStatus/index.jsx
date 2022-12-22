@@ -109,9 +109,9 @@ function BotStatus() {
                 <span>
                   <strong>Status</strong> {clientStatuses[s.status].name}
                   <br />
-                  <strong>Guilds</strong> {s.guilds}
+                  <strong>Guilds</strong> {optimizeNumbers(s.guilds)}
                   <br />
-                  <strong>Users</strong> {s.users}
+                  <strong>Users</strong> {optimizeNumbers(s.users)}
                   <br />
                   <strong>Ping</strong> {s.ping}ms
                   <br />
