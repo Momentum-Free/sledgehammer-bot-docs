@@ -1,0 +1,15 @@
+/* stylelint-disable docusaurus/copyright-header */
+
+.section {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+}
+.title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.subtitle {
+  margin-top: 2rem;
+}

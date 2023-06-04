@@ -1,0 +1,94 @@
+---
+sidebar_position: 5
+title: ✏️ Nameban
+---
+
+<!-- Imports -->
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+import CodeBlock from "@theme/CodeBlock";
+
+<!-- Documentation -->
+
+This command is used to ban users based on their username allowing to use Regex to have a more accurate filter for the name.
+
+```
+/nameban
+```
+
+**Parameters**
+
+\*Required
+
+**name\***
+
+    type: String | Regex
+
+    description: Users' name to ban | Regex to match the users' name to ban
+
+**reason\***
+
+    type: String
+
+    description: Reason to ban the users for
+
+**regex**
+
+    type: Boolean
+
+    description: Use the name parameter as a Regex expression
+
+    default: False
+
+:::info
+
+To add the case insensitive flag to the regex, add `(?i)` at the start/end of the regex.
+
+If you want to learn a bit more about Regex you can check [regexr.com](https://regexr.com)
+to help you build your expressions.
+
+:::
+
+**global**
+
+    type: Boolean
+
+    description: Global ban the users
+
+    default: False
+
+**role-check**
+
+    type: Boolean
+
+    description: Whether to ban accounts with roles or not
+
+    default: False
+
+**age**
+
+    type: Number
+
+    description: Accounts older then this value (in days) won't get banned
+
+**days**
+
+    type: Option
+
+    description: Number of days to delete messages
+
+    options: [ 0 to 7 ]
+
+    default: 7
+
+**Example Usage**
+
+<Tabs>
+  <TabItem value='withname' label='with Name' default>
+    <CodeBlock>/nameban name:Support reason:Scam</CodeBlock>
+  </TabItem>
+  <TabItem value='withregex' label='with Regex'>
+    <CodeBlock>/nameban name:(?i)support reason:Raid regex:True</CodeBlock>
+  </TabItem>
+</Tabs>
