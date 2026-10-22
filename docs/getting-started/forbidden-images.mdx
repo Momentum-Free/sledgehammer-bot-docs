@@ -1,0 +1,35 @@
+---
+sidebar_position: 3
+title: 🖼️ Forbidden Image Detection
+---
+
+Forbidden Image Detection can scan supported image attachments in new messages and apply configured actions when an image matches a local or global record. Moderators can also flag images from an existing message for review.
+
+## Automatic Scanning
+
+Enable or disable automatic matching for new image messages with either command:
+
+```
+/config forbidden-images enabled enabled:True
+/config forbidden-images automatic-scanning enabled:True
+```
+
+## Actions and Alerts
+
+Use `/config forbidden-images` to manage local and global actions, global matching, and alert settings. Available actions are deleting the message, banning the user, or timing the user out for 24 hours. Local and global actions are configured separately. You can also set an alert channel and roles to notify.
+
+Use `/config forbidden-images status` to view the current settings.
+
+:::info
+
+Image matching is approximate. Configure actions with that in mind.
+
+:::
+
+## Flag an Existing Message
+
+Right-click a message with supported image attachments, open **Apps**, then choose **Sledgehammer → Flag images**. A moderator with **Ban Members** or **Administrator** permission can submit the images for review, or choose to flag them and ban the user. Supported image types are PNG, JPEG, and WebP.
+
+## Discord Message Content Intent
+
+Automatic scanning of new messages requires the **Message Content** privileged intent. The current bot does not request this intent, so automatic scanning is not available. Manual moderator flagging of existing messages does not require this intent.
